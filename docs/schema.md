@@ -2,7 +2,7 @@
 
 ## Users
 | column name     | data type | details                         |
-|---------------------------------------------------------------|
+|-----------------|-----------|---------------------------------|
 | id              | integer   | not null, primary key           |
 | username        | string    | not null, indexed, unique       |
 | email           | string    | not null, indexed, unique       |
@@ -11,7 +11,7 @@
 
 ## Videos
 | column name     | data type | details                         |
-|---------------------------------------------------------------|
+|-----------------|-----------|---------------------------------|
 | id              | integer   | not null, primary key           |
 | title           | string    | not null                        |
 | description     | string    | not null                        |
@@ -21,7 +21,7 @@
 
 ## Comments
 | column name     | data type | details                         |
-|---------------------------------------------------------------|
+|-----------------|-----------|---------------------------------|
 | id              | integer   | not null, primary key           |
 | body            | string    | not null                        |
 | user_id         | integer   | not null, foreign key, indexed  |
@@ -29,7 +29,7 @@
 
 ## Likes
 | column name     | data type | details                         |
-|---------------------------------------------------------------|
+|-----------------|-----------|---------------------------------|
 | id              | integer   | not null, primary key           |
 | like_value      | integer   | not null                        |
 | user_id         | integer   | not null, foreign key, indexed  |
