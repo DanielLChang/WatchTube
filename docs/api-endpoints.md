@@ -1,19 +1,19 @@
 # HTML API
-### Root
+**Root**
 - `GET /` - loads React Web App
 
 # JSON API
-### Users
+**Users**
 - `POST /api/users`
 - `PATCH /api/users`
 - `GET /api/users/:id`
 
-### Session
+**Session**
 - `POST /api/session`
 - `DELETE /api/session`
 - `GET /api/session`
 
-### Videos
+**Videos**
 - `POST /api/videos`
 - `GET /api/videos`
   - Videos index/search
@@ -22,14 +22,14 @@
 - `PATCH /api/videos/:id`
 - `DELETE /api/videos/:id`
 
-### Comments
+**Comments**
 - `GET /api/videos/:video_id/comments`
   - Comments index for specific video
 - `POST /api/videos/:video_id/comments`
 - `PATCH /api/comments/:id`
 - `DELETE /api/comments/:id`
 
-### Likes
+**Likes**
 - `POST /api/videos/:video_id/likes`
   - Add like or dislike for specific video
   - User will not be able to like/dislike video more than once

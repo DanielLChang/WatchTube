@@ -72,6 +72,7 @@ WatchTube is a web application inspired by YouTube built using Ruby on Rails and
 
 ## Phase 5: Searching (1 days)
 **Objective:** Both users and videos can be searched in search bar
+- [ ] Search Index
 
 ## Phase 6: Video Persistence (2 days)
 **Objective:** Video will continue to play at bottom right corner of page while user navigates to other pages
