@@ -1,6 +1,9 @@
 # WatchTube
 
-Heroku Link: N/A
+Heroku Link: [WatchTube]
+
+[WatchTube]: http://watchtube.herokuapp.com 
+
 
 ## Minimum Viable Product
 
