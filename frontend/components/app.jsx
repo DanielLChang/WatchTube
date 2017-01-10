@@ -15,7 +15,7 @@ class App extends React.Component {
       <div>
         <header>
           <Link to="/" className="header-link">
-            <h1>WatchTube Title</h1>
+            <h1>WatchTube Logo</h1>
           </Link>
           <GreetingContainer />
         </header>
