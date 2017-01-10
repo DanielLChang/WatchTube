@@ -23,8 +23,12 @@ class ApplicationController < ActionController::Base
     @current_user = nil
   end
 
+  def prevent_if_logged_in
+    render json: { errors: ['You already have an account!'] }, status: 403 if logged_in?
+  end
+
   def require_logged_in
-    render json: ['Need to be logged in for that!'], status: 401 if !current_user
+    render json: { errors: ['Need to be logged in for that!'] }, status: 403 unless logged_in?
   end
 
 end
