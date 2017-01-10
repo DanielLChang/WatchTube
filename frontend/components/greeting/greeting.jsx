@@ -18,10 +18,7 @@ const links = () => (
 
 const Greeting = ({ currentUser, logout }) => (
   <div>
-    <Link to="/login">Log In</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup">Sign Up</Link>
-    <button className="header-button" onClick={ logout }>Log Out</button>
+    {currentUser ? greet(currentUser, logout) : links()}
   </div>
 );
 

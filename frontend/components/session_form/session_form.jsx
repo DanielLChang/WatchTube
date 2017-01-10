@@ -13,6 +13,16 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidUpdate() {
+    this.redirectIfLoggedIn();
+  }
+
+  redirectIfLoggedIn() {
+    if (this.props.loggedIn) {
+      this.props.router.push("/");
+    }
+  }
+
   navLink() {
     if (this.props.formType === 'login') {
       return <Link to='/signup'>sign up instead</Link>;
@@ -46,6 +56,8 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    const text = this.props.formType === "login" ? "Sign In" : "Create Account";
+
     return (
       <div className="login-form-container">
         <form className="login-form-box" onSubmit={this.handleSubmit}>
@@ -80,7 +92,7 @@ class SessionForm extends React.Component {
             </label>
 
             <br/>
-            <input type="submit" value="Submit" />
+            <input type="submit" value={text} />
           </div>
 
         </form>
