@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const greet = (currentUser, logout) => (
   <div className="header-group">
-    <h1 className="header-name">Welcome, { currentUser.username }</h1>
+    <h1 className="header-name">Welcome, { currentUser.user.username }</h1>
     <button className="header-button" onClick={ logout }>Log Out</button>
   </div>
 );
@@ -16,10 +16,13 @@ const links = () => (
   </div>
 );
 
-const Greeting = ({ currentUser, logout }) => (
-  <div>
-    {currentUser ? greet(currentUser, logout) : links()}
-  </div>
-);
+const Greeting = ({ currentUser, logout }) => {
+  // debugger;
+  return (
+    <div>
+      {currentUser ? greet(currentUser, logout) : links()}
+    </div>
+  );
+};
 
 export default Greeting;
