@@ -4,7 +4,6 @@ class Api::UsersController < ApplicationController
   before_action :prevent_if_existing_username, only: :create
   before_action :require_logged_in, only: :update
 
-
   def create
     @user = User.new(user_params)
 
@@ -32,7 +31,7 @@ class Api::UsersController < ApplicationController
     if @user
       render :show
     else
-      render json: { errors: @user.errors.full_messages }, status: 404
+      render json: {}, status: 404
     end
   end
 
