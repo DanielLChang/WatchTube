@@ -19,10 +19,6 @@
       1: {
         id: 1,
         body: "commentbody1",
-        likes: {
-          likes: 1,
-          dislikes: 0
-        }
       }
     }
   }
