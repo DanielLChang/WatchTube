@@ -17,7 +17,12 @@ const links = () => (
 );
 
 const Greeting = ({ currentUser, logout }) => (
-  currentUser ? greet(currentUser, logout) : links()
+  <div>
+    <Link to="/login">Log In</Link>
+    &nbsp;or&nbsp;
+    <Link to="/signup">Sign Up</Link>
+    <button className="header-button" onClick={ logout }>Log Out</button>
+  </div>
 );
 
 export default Greeting;

@@ -1,7 +1,5 @@
 class Api::UsersController < ApplicationController
 
-  before_action :prevent_if_logged_in, only: :create
-  before_action :prevent_if_existing_username, only: :create
   before_action :require_logged_in, only: :update
 
   def create
@@ -11,7 +9,7 @@ class Api::UsersController < ApplicationController
       login(@user)
       render :create
     else
-      render json: { errors: @user.errors.full_messages }, status: 422
+      render json: @user.errors.full_messages, status: 422
     end
   end
 
@@ -21,7 +19,7 @@ class Api::UsersController < ApplicationController
     if @user.update(user_params)
       render :update
     else
-      render json: { errors: @user.errors.full_messages }, status: 404
+      render json: @user.errors.full_messages, status: 404
     end
   end
 
@@ -39,13 +37,6 @@ class Api::UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:username, :email, :password)
-  end
-
-  def prevent_if_existing_username
-    if User.exists?(username: params[:user][:username])
-      render json: { errors: ['Username is not available'] }
-      false
-    end
   end
 
 end
