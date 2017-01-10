@@ -89,12 +89,15 @@ class SessionForm extends React.Component {
 
               {this.renderErrors()}
 
-              <input type="submit" value={text} />
+              <label className="login-input">
+                <input type="submit" value={text} />
+              </label>
+
             </div>
 
           </form>
         </div>
-      )
+      );
     }
 
     return (
@@ -136,7 +139,9 @@ class SessionForm extends React.Component {
 
             {this.renderErrors()}
 
-            <input type="submit" value={text} />
+            <label className="login-input">
+              <input type="submit" value={text} />
+            </label>
           </div>
 
         </form>

@@ -30,15 +30,24 @@ header {
 }
 
 .login-form-box {
-  outline: 1px solid black;
-  padding-left: 200px;
-  padding-right: 200px;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 5px #888888;
+  border-radius: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 20px;
 }
 
 .login-input {
+  text-align: center;
 }
 
-h2, h3, .login-input {
+h2, h3 {
   text-align: center;
+}
+
+input {
+  font-size: 16px;
+  height: 45px;
+  width: 270px;
 }
