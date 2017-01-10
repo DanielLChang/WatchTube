@@ -16,7 +16,7 @@
 | title           | string    | not null                        |
 | description     | string    | not null                        |
 | video_url       | string    | not null                        |
-| views           | integer   | not null                        |
+| views           | integer   | not null, default 0             |
 | user_id         | integer   | not null, foreign key, indexed  |
 
 ## Comments

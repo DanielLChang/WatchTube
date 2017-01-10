@@ -21,7 +21,7 @@ Users will be able to add comments to videos. Users will only be allowed to comm
 
 Comments will be stored in a table containing the comment `id`, `body`, `video_id`, and `user_id`.
 
-### Likes
+### Likes (BONUS)
 Videos and comments have the ability to be 'liked' or 'disliked'. Users will only allowed to like/dislike if they are logged in.
 
 Likes will be stored in one table through polymorphic association with the like `id`, `like_value`, `user_id`, `video_id`, and `comment_id`.

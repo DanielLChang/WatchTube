@@ -11,13 +11,12 @@
 **Session**
 - `POST /api/session`
 - `DELETE /api/session`
-- `GET /api/session`
 
 **Videos**
 - `POST /api/videos`
 - `GET /api/videos`
   - Videos index/search
-  - accepts query params to list videos and user
+  - accepts query params to list videos
 - `GET /api/videos/:id`
 - `PATCH /api/videos/:id`
 - `DELETE /api/videos/:id`

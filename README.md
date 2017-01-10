@@ -11,12 +11,13 @@ WatchTube is a web application inspired by YouTube built using Ruby on Rails and
 - [ ] New account creation, login, and guest/demo login
 - [ ] Videos
 - [ ] Comments
-- [ ] Likes
 - [ ] Searching
 - [ ] Stream videos without interruption
 
 ### Bonus Features
 - [ ] Tags on videos
+- [ ] Likes for videos and comments
+- [ ] Search for users by username
 - [ ] Infinite scrolling
 - [ ] Playlists
 - [ ] Nested comments
@@ -36,7 +37,7 @@ WatchTube is a web application inspired by YouTube built using Ruby on Rails and
 
 ## Implementation Timeline
 
-## Phase 1: Backend setup and Front End User Authentication (1 day)
+## Phase 1: Backend setup and Front End User Authentication (2 days)
 **Objective:** Functioning User Authentication
 - [ ] Signup and authentication (via BCrypt)
 - [ ] API setup
@@ -65,19 +66,14 @@ WatchTube is a web application inspired by YouTube built using Ruby on Rails and
 - [ ] Comment Form
   - Add comment to videos
 
-## Phase 4: Like Model, API, and Components (2 days)
-**Objective:** CRUD for likes through API and Users
-- [ ] Video likes
-- [ ] Comment likes
-
-## Phase 5: Searching (1 days)
-**Objective:** Both users and videos can be searched in search bar
+## Phase 4: Searching (2 days)
+**Objective:** Videos can be searched in search bar by title
 - [ ] Search Index
 
-## Phase 6: Video Persistence (2 days)
+## Phase 5: Video Persistence (2 days)
 **Objective:** Video will continue to play at bottom right corner of page while user navigates to other pages
 - [ ] Video will stop playing when another video is being viewed
   Maybe have video show page on video index
 
-## Phase 7: Cleanup (However many days are remaining)
+## Phase 6: Cleanup and Bonus Features (However many days are remaining)
 **Objective:** Perfect UI/UX
