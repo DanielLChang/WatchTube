@@ -13,16 +13,16 @@ class App extends React.Component {
     const { children } = this.props;
 
     return (
-      <div>
+      <div className="app-page">
         <header>
-          <div>
-            <ul className="left-nav">
+          <div className="left-nav">
+            <ul>
               <li>
                 <i className="fa fa-bars" ></i>
               </li>
               <li>
-                <Link to="/" className="header-link">
-                  WatchTube
+                <Link to="/">
+                  <img className="header-link" src={require('../../app/assets/images/logo-title.png')} />
                 </Link>
               </li>
             </ul>
@@ -48,8 +48,10 @@ class App extends React.Component {
           <GreetingContainer />
         </header>
 
-        { children }
-
+        <div className="body">
+          { children }
+        </div>
+        
         <Footer />
       </div>
     );

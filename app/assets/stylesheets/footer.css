@@ -1,6 +1,6 @@
 .footer-nav {
   display: flex;
-  position: absolute;
+  position: relative;
   right: 8px;
   bottom: 8px;
   left: 8px;
