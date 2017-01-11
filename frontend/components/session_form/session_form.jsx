@@ -90,7 +90,7 @@ class SessionForm extends React.Component {
               {this.renderErrors()}
 
               <label className="login-input">
-                <input type="submit" value={text} />
+                <input className="login-button" type="submit" value={text} />
               </label>
 
             </div>
@@ -140,7 +140,7 @@ class SessionForm extends React.Component {
             {this.renderErrors()}
 
             <label className="login-input">
-              <input type="submit" value={text} />
+              <input className="login-button" type="submit" value={text} />
             </label>
           </div>
 

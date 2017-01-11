@@ -19,9 +19,7 @@ const links = () => (
 const Greeting = ({ currentUser, logout }) => {
   // debugger;
   return (
-    <div>
-      {currentUser ? greet(currentUser, logout) : links()}
-    </div>
+    currentUser ? greet(currentUser, logout) : links()
   );
 };
 

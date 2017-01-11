@@ -15,8 +15,13 @@ class App extends React.Component {
       <div>
         <header>
           <Link to="/" className="header-link">
-            <h1>WatchTube Logo</h1>
+            WatchTube Logo
           </Link>
+
+          <div className="searchbar-placeholder">
+            Searchbar placeholder
+          </div>
+
           <GreetingContainer />
         </header>
         { children }
