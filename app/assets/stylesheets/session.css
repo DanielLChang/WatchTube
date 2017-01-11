@@ -31,6 +31,7 @@
   width: 285px;
   background-color: #498bf4;
   margin: 15px;
+  margin-bottom: 0;
 }
 
 .login-button:hover {
@@ -41,6 +42,7 @@
   width: 285px;
   background-color: #3474db;
   margin: 15px;
+  margin-bottom: 0;
 }
 
 .login-signup-errors {

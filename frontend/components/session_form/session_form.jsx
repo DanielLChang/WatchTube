@@ -93,6 +93,18 @@ class SessionForm extends React.Component {
                 <input className="login-button" type="submit" value={text} />
               </label>
 
+              <label className="login-input">
+                <input className="login-button"
+                  type="submit"
+                  value="Demo"
+                  onClick={() => this.setState({
+                    email: "demo@gmail.com",
+                    username: "Demo",
+                    password: "password"
+                  })}>
+                </input>
+              </label>
+
             </div>
 
           </form>
