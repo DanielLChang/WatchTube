@@ -14,15 +14,27 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <div>
-            
+          <div className="left-nav">
+            <i className="fa fa-bars" aria-hidden="true"></i>
             <Link to="/" className="header-link">
               WatchTube
             </Link>
           </div>
 
-          <div className="searchbar-placeholder">
-            Searchbar placeholder
+          <div>
+            <ul className="searchbar-placeholder">
+              <li>
+                <label>
+                  <input
+                    className="search-input-text"
+                    type="text"
+                    placeholder="Search Placeholder"/>
+                </label>
+              </li>
+              <li>
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </li>
+            </ul>
           </div>
 
           <GreetingContainer />

@@ -12,18 +12,41 @@ header {
   justify-content: space-between;
 }
 
-.header-link {
+.left-nav {
   display: flex;
-  position: relative;
   float: left;
-  width: 200px;
+  margin-right: 25px;
+
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+  margin: 20px;
+  color: gray;
 }
 
 .searchbar-placeholder {
   display: flex;
-  border: 1px solid black;
-  height: 30px;
-  width: 430px;
+  list-style: none;
+  padding: 0;
+}
+
+.search-input-text {
+  padding-left: 10px;
+  font-size: 14px;
+  height: 25px;
+  width: 580px;
+  display: flex;
+}
+
+.fa-search:before {
+    content: "\f002";
+    font-size: 18px;
+    color: #a7a8aa;
+    background-color: #f2f2f2;
+    border: 1px solid #c2c4c6;
+    padding: 5.5px 30px;
+    display: flex;
 }
 
 .right-nav {
