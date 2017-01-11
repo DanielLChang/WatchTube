@@ -14,9 +14,12 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <Link to="/" className="header-link">
-            WatchTube Logo
-          </Link>
+          <div>
+            
+            <Link to="/" className="header-link">
+              WatchTube
+            </Link>
+          </div>
 
           <div className="searchbar-placeholder">
             Searchbar placeholder
@@ -24,6 +27,7 @@ class App extends React.Component {
 
           <GreetingContainer />
         </header>
+
         { children }
       </div>
     );

@@ -6,9 +6,10 @@ header {
   display: flex;
   height: 50px;
   position: relative;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dee0e2;
   padding: 8px 20px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-link {
@@ -25,13 +26,24 @@ header {
   width: 430px;
 }
 
-.login-signup {
+.right-nav {
   display: flex;
   float: right;
-  margin-left: auto;
-  /* border: 1px solid black; */
+  margin-left: 25px;
   padding: 10px 0 10px 0;
-  /* margin-top: auto; */
+}
+
+.right-nav-button {
+  cursor: pointer;
+  border: 1px solid #054dc1;
+  border-radius: 3px;
+  color: #fff;
+  height: 25px;
+  width: 67px;
+  background-color: #4076F6;
+  font-size: 11px;
+  margin-right: 10px;
+  padding: 0;
 }
 
 .login-form-container {
@@ -85,6 +97,3 @@ input {
   height: 45px;
   width: 270px;
 }
-
-
-h1 {}
