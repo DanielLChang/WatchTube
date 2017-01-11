@@ -1,6 +1,6 @@
 class Video < ApplicationRecord
 
-  validates :title, :user, :video_url, :description, presence: true
+  validates :title, :user, :description, presence: true
 
   belongs_to :user
 

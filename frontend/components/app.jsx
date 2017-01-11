@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import GreetingContainer from './greeting/greeting_container';
+import Footer from './footer/footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class App extends React.Component {
           <div>
             <ul className="left-nav">
               <li>
-                <i className="fa fa-bars" aria-hidden="true"></i>
+                <i className="fa fa-bars" ></i>
               </li>
               <li>
                 <Link to="/" className="header-link">
@@ -48,6 +49,8 @@ class App extends React.Component {
         </header>
 
         { children }
+
+        <Footer />
       </div>
     );
   }
