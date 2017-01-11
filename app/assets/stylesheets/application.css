@@ -16,13 +16,28 @@ header {
   display: flex;
   float: left;
   margin-right: 25px;
-
+  list-style: none;
+  padding: 0;
+  align-items: center;
 }
 
-.fa-bars:before {
+.fa-bars {
+  display: flex;
   content: "\f0c9";
   margin: 20px;
   color: gray;
+}
+
+.fa-bars:hover {
+  display: flex;
+  cursor: pointer;
+  content: "\f0c9";
+  margin: 20px;
+  color: gray;
+}
+
+.header-link {
+  display: flex;
 }
 
 .searchbar-placeholder {
@@ -39,14 +54,25 @@ header {
   display: flex;
 }
 
-.fa-search:before {
-    content: "\f002";
-    font-size: 18px;
-    color: #a7a8aa;
-    background-color: #f2f2f2;
-    border: 1px solid #c2c4c6;
-    padding: 5.5px 30px;
-    display: flex;
+.fa-search {
+  content: "\f002";
+  font-size: 18px;
+  color: #a7a8aa;
+  background-color: #f2f2f2;
+  border: 1px solid #c2c4c6;
+  padding: 5.5px 30px;
+  display: flex;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+  content: "\f002";
+  font-size: 18px;
+  color: #616366;
+  background-color: #e5e6e8;
+  border: 1px solid #c2c4c6;
+  padding: 5.5px 30px;
+  display: flex;
 }
 
 .right-nav {
@@ -64,6 +90,18 @@ header {
   height: 25px;
   width: 67px;
   background-color: #4076F6;
+  font-size: 11px;
+  margin-right: 10px;
+  padding: 0;
+}
+.right-nav-button:hover {
+  cursor: pointer;
+  border: 1px solid #054dc1;
+  border-radius: 3px;
+  color: #fff;
+  height: 25px;
+  width: 67px;
+  background-color: #2F54D2;
   font-size: 11px;
   margin-right: 10px;
   padding: 0;

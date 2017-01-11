@@ -14,11 +14,18 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <div className="left-nav">
-            <i className="fa fa-bars" aria-hidden="true"></i>
-            <Link to="/" className="header-link">
-              WatchTube
-            </Link>
+          <div>
+            <ul className="left-nav">
+              <li>
+                <i className="fa fa-bars" aria-hidden="true"></i>
+              </li>
+              <li>
+                <Link to="/" className="header-link">
+                  WatchTube
+                </Link>
+              </li>
+            </ul>
+
           </div>
 
           <div>

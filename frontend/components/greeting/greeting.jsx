@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const greet = (currentUser, logout) => (
   <div className="header-group">
-    <button className="header-button" onClick={ logout }>Log Out</button>
+    <button className="right-nav-button" onClick={ logout }>Log Out</button>
   </div>
 );
 
