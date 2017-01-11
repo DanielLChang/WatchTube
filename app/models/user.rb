@@ -9,6 +9,8 @@ class User < ApplicationRecord
     allow_nil: true
   }
 
+  has_many :videos, dependent: destroy
+
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
 
