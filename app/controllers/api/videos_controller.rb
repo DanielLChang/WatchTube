@@ -6,8 +6,7 @@ class Api::VideosController < ApplicationController
 
   def create
     if video_params[:thumbnail] === 'null'
-      @errors = ["Thumbnail can't be blank"]
-      render json: errors, status: 422
+      render json: ["Thumbnail can't be blank"], status: 422
     end
 
     @video = Video.new(video_params)
@@ -43,6 +42,9 @@ class Api::VideosController < ApplicationController
   end
 
   def destroy
+    @video = Video.find(params[:id])
+    @video.destroy
+    render :destroy
   end
 
   private
