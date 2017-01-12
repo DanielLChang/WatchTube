@@ -4,6 +4,8 @@ import { Link } from 'react-router';
 import GreetingContainer from './greeting/greeting_container';
 import Footer from './footer/footer';
 
+import ReactPlayer from 'react-player';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -49,9 +51,19 @@ class App extends React.Component {
         </header>
 
         <div className="body">
+
+          //test video
+          <div className="video-item">
+            <Link to='/'><img src='https://dl.dropboxusercontent.com/s/tlmpw6mtkfh1fqp/I%27ll%20Be%20There.png?dl=0' width={640} height={360}/></Link>
+          </div>
+
+          <div className="video-player">
+            <ReactPlayer url='https://dl.dropboxusercontent.com/s/zisao7ejqm86dnb/I%27ll%20Be%20There.mp4?dl=0' controls={true} width={640} height={360} playing/>
+          </div>
+
           { children }
         </div>
-        
+
         <Footer />
       </div>
     );
