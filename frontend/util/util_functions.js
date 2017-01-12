@@ -1,6 +1,15 @@
 import React from 'react';
 import VideoItem from '../components/videos/video_item';
 
+export const getVideoDetails = (videos) => {
+  if (typeof videos === 'undefined') return null;
+
+  const videoDetails = Array.from(videos);
+  return videoDetails.map((video, idx) => (
+    <VideoItem key={video.id} video={video}/>
+  ));
+};
+
 export const timeAgo = (createdDate) => {
   const date = new Date(createdDate);
 

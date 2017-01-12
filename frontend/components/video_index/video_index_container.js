@@ -8,10 +8,6 @@ const mapStateToProps = ({ videos }, ownProps) => {
   });
 };
 
-// ({
-//   videos: videos.list_videos
-// });
-
 const mapDispatchToProps = (dispatch) => ({
   getAllVideos: () => dispatch(getAllVideos())
 });
