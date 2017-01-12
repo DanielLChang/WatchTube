@@ -26,6 +26,6 @@ const VideoReducer = (state = _nullState, action) => {
     default:
       return state;
   }
-
-
 };
+
+export default VideoReducer;
