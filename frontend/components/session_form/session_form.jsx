@@ -63,10 +63,12 @@ class SessionForm extends React.Component {
         <div className="login-form-container">
           <form className="login-form-box" onSubmit={this.handleSubmit}>
             <h2>
-              WatchTube
+              <img
+                className="logo-static"
+                src={require('../../../app/assets/images/logo-title.png')}/>
             </h2>
             <h3>
-              {text} to start watching!
+              {text} and start watching!
             </h3>
 
             <div className="login-form">
@@ -116,10 +118,12 @@ class SessionForm extends React.Component {
       <div className="login-form-container">
         <form className="login-form-box" onSubmit={this.handleSubmit}>
           <h2>
-            WatchTube
+            <img
+              className="logo-static"
+              src={require('../../../app/assets/images/logo-title.png')}/>
           </h2>
           <h3>
-            {text} to start watching!
+            {text} and start watching!
           </h3>
 
           <div className="login-form">
