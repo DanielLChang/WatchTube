@@ -1,51 +1,41 @@
-export const fetchAllVideos = (success, error) => (
+export const fetchAllVideos = () => (
   $.ajax({
     method: "GET",
-    url: "/api/videos",
-    success,
-    error
+    url: "/api/videos"
   })
 );
 
-export const fetchVideo = (id, success, error) => (
+export const fetchVideo = (id) => (
   $.ajax({
     method: "GET",
-    url: `/api/videos/${id}`,
-    success,
-    error
+    url: `/api/videos/${id}`
   })
 );
 
-export const createVideo = (video, success, error) => (
+export const createVideo = (video) => (
   $.ajax({
     method: "POST",
     url: "/api/videos",
     dataType: 'json',
     contentType: false,
     processData: false,
-    data: video,
-    success,
-    error
+    data: video
   })
 );
 
-export const updateVideo = (video, success, error) => (
+export const updateVideo = (video) => (
   $.ajax({
     method: "PATCH",
     url: `/api/videos/${video.id}`,
     contentType: false,
     processData: false,
-    data: video,
-    success,
-    error
+    data: video
   })
 );
 
-export const destroyVideo = (id, success, error) => {
+export const destroyVideo = (id) => {
   $.ajax({
     method: "DELETE",
-    url: `/api/videos/${id}`,
-    success,
-    error
+    url: `/api/videos/${id}`
   });
 };

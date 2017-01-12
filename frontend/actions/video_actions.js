@@ -1,6 +1,9 @@
+import * as VideoAPIUtil from '../util/video_api_util';
+
 export const RECEIVE_VIDEOS = "RECEIVE_VIDEOS";
 export const RECEIVE_VIDEO = "RECEIVE_VIDEO";
 export const CREATE_VIDEO = "CREATE_VIDEO";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 export const receiveVideos = (videos) => ({
   type: RECEIVE_VIDEOS,
@@ -12,8 +15,14 @@ export const receiveVideo = (video) => ({
   video
 });
 
-export const createVideo = (video, cb) => ({
-  type: CREATE_VIDEO,
-  video,
-  cb
+export const receiveErrors = (errors) => ({
+  type: RECEIVE_ERRORS,
+  errors
 });
+
+export const getAllVideos = () => (dispatch) => (
+  VideoAPIUtil.fetchAllVideos().then(
+    (videos) => dispatch(receiveVideos(videos)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
+  )
+);

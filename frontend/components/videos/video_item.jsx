@@ -21,7 +21,7 @@ class VideoItem extends React.Component {
           //title
           <h3><Link to={path}>{this.title}</Link></h3>
           //username
-          //no user page now. for now empty link to home page
+          //no user page now. for now link to home page
           <h4><Link to='/'>{this.user.username}</Link></h4>
           //views & timeago
           <h4>{video.views} views · {timeAgo(video.created_date)} ago</h4>
