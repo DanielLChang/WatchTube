@@ -13,8 +13,8 @@ class App extends React.Component {
       <Carousel
         slidesToShow={numToSlide}
         slidesToScroll={numToSlide}
-        dragging={true}
-        height={"200px"}
+        height={"250px"}
+        widht={"1265px"}
         decorators={[{
           component: React.createClass({
             render() {

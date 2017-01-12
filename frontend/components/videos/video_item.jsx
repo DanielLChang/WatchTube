@@ -9,23 +9,22 @@ class VideoItem extends React.Component {
 
   render() {
     const { video } = this.props;
-    debugger;
     let path = `/video/${video.id}`;
 
     return (
       <div className="video-item">
-        //thumbnail
-        <Link to={path}><img src={video.thumbnail_url}/></Link>
+        {/* title */}
+        <Link to={path}><img src={video.thumbnail_url} height={110} width={195}/></Link>
 
-        //details
+        {/* details */}
         <div>
-          //title
+          {/* title */}
           <h3><Link to={path}>{this.title}</Link></h3>
-          //username
-          //no user page now. for now link to home page
-          <h4><Link to='/'>{this.user.username}</Link></h4>
-          //views & timeago
-          <h4>{video.views} views · {timeAgo(video.created_date)} ago</h4>
+          {/* username */}
+          {/* No user page right now. Link to Home */}
+          <h4><Link to='/'>{video.user.username}</Link></h4>
+          {/* views and timeago */}
+          <h4>{video.views} views · {timeAgo(video.created_at)} ago</h4>
         </div>
       </div>
     );
