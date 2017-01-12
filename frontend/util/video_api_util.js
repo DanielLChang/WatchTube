@@ -29,7 +29,7 @@ export const createVideo = (video, success, error) => (
   })
 );
 
-export const editVideo = (video, success, error) => (
+export const updateVideo = (video, success, error) => (
   $.ajax({
     method: "PATCH",
     url: `/api/videos/${video.id}`,
