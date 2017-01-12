@@ -1,4 +1,4 @@
-json.list.videos @videos.each do |video|
+json.list_videos @videos.each do |video|
   json.id video.id
   json.user video.user
   json.title video.title
