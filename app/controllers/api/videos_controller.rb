@@ -23,7 +23,7 @@ class Api::VideosController < ApplicationController
   def show
     @video = Video.find(params[:id])
 
-    debugger
+    # debugger
 
     if @video
       #increment views by 1 and save

@@ -15,7 +15,7 @@ users.push(User.create!({
   password: "password"
 }))
 
-50.times do
+5.times do
   username = Faker::Pokemon.name
   while User.find_by_username(username) do username = Faker::Pokemon.name end
 
@@ -36,8 +36,8 @@ videos.push(
   Video.create!({
     title: "Baby, I Love Your Way",
     description: "Baby, I Love Your Way · Big Mountain ℗ 1994 Giant Records",
-    video: "http://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.mp4",
-    thumbnail: "http://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.jpg",
+    video: URI.parse("http://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.mp4"),
+    thumbnail: URI.parse("http://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.jpg"),
     user_id: users.sample.id,
     views: rand(10000000)
   })
