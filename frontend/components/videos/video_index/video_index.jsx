@@ -24,14 +24,23 @@ class VideoIndex extends React.Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
-  handleResize() {
+  handleResize(){
     const { count } = this.state;
     const width = $(window).width();
 
-    if (width < 1335) this.setState({ count: 5 });
-    if (width < 1130) this.setState({ count: 4 });
-    if (width < 915) this.setState({ count: 3 });
-    if (width < 710) this.setState({ count: 2 });
+    if (width > 1335 && count !== 5){
+      $('.video-index').width("1120px");
+      this.setState({ count: 5 });
+    }else if(width < 1336 && width > 1130 && count !== 4){
+      $('.video-index').width("900px");
+      this.setState({ count: 4 });
+    }else if(width < 1131 && width > 915 && count !== 3){
+      $('.video-index').width("680px");
+      this.setState({ count: 3 });
+    }else if(width < 916 && width > 710 && count !== 2){
+      $('.video-index').width("460px");
+      this.setState({ count: 2 });
+    }
   }
 
   shuffle(videos) {

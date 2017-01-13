@@ -52,7 +52,7 @@ class App extends React.Component {
           <GreetingContainer />
         </header>
 
-        <div className="body">
+        <div className="middle">
 
           { children }
         </div>

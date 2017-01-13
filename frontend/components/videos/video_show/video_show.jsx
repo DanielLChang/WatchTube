@@ -25,12 +25,11 @@ class VideoShow extends React.Component {
       <div className="video-show-container">
         <div className='video-player'>
           <ReactPlayer
-            width={640} height={360}
             url={video.video_url}
             controls={true}
             playing={false}/>
         </div>
-        
+
         <div className="video-list-items">
 
         </div>
