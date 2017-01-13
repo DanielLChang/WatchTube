@@ -11,7 +11,7 @@ const VideoBar = (props) => {
   return(
     <div className="carousel-container">
       <div className="carousel">
-        <h3>{ title }</h3>
+        <h1 className="carousel-title">{ title }</h1>
         <Carousel
           numToSlide={ count }
           videos={ getVideoDetails(videos) }/>
