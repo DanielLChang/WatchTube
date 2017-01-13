@@ -19,7 +19,7 @@ class VideoShow extends React.Component {
     if (!video) return null;
     const date = new Date(video.created_date).toDateString().slice(3);
 
-    debugger;
+    // debugger;
 
     return(
       <div className="video-show-container">
@@ -28,7 +28,11 @@ class VideoShow extends React.Component {
             width={640} height={360}
             url={video.video_url}
             controls={true}
-            playing={true}/>
+            playing={false}/>
+        </div>
+        
+        <div className="video-list-items">
+
         </div>
 
         <div className="video-title-container">
@@ -40,6 +44,10 @@ class VideoShow extends React.Component {
         <div className="video-detail-container">
           <div className="video-date">Published on {date}</div>
           <div className="video-description">{video.description}</div>
+        </div>
+
+        <div className="video-comments">
+
         </div>
       </div>
     );
