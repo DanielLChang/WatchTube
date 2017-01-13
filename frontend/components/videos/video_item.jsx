@@ -10,6 +10,7 @@ class VideoItem extends React.Component {
   render() {
     const { video } = this.props;
     let path = `/videos/${video.id}`;
+    // debugger;
 
     return (
       <div className="video-item">

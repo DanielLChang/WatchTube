@@ -25,7 +25,7 @@ class VideoShow extends React.Component {
       <div className="video-show-container">
         <div className='video-player'>
           <ReactPlayer
-            url={video.video_url}
+            url={"http://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.mp4"}
             controls={true}
             playing={false}/>
         </div>

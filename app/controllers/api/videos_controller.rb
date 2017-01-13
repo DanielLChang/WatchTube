@@ -9,6 +9,8 @@ class Api::VideosController < ApplicationController
       render json: ["Thumbnail can't be blank"], status: 422
     end
 
+    # debugger
+
     @video = Video.new(video_params)
 
     if @video.save
@@ -20,6 +22,8 @@ class Api::VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+
+    debugger
 
     if @video
       #increment views by 1 and save
