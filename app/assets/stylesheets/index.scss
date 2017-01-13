@@ -50,6 +50,9 @@
     height: 60px;
     background-color: #fff;
   }
+  button:focus{
+    outline: none;
+  }
   .slider-decorator-0 button:hover{
     box-shadow: -1px 0 1px #aaa;
     transform: translate(-33px, -43px);

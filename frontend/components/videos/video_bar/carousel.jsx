@@ -11,6 +11,7 @@ class App extends React.Component {
 
     return (
       <Carousel
+        className="video-carousel"
         slidesToShow={numToSlide}
         slidesToScroll={numToSlide}
         height={"250px"}
