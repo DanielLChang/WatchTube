@@ -10,6 +10,19 @@ export const getVideoDetails = (videos) => {
   ));
 };
 
+export const shuffleVideos = (videos) => {
+  const videoList = Array.from(videos);
+
+  for (let idx = 0; idx < videoList.length - 1; idx++) {
+    const rand = Math.floor(Math.random() * (idx + 1));
+    const temp = videoList[idx];
+    videoList[idx] = videoList[rand];
+    videoList[rand] = temp;
+  }
+
+  return videoList;
+};
+
 export const timeAgo = (createdDate) => {
   const date = new Date(createdDate);
 

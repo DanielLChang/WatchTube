@@ -14,7 +14,9 @@ class VideoItem extends React.Component {
     return (
       <div className="video-item">
         {/* title */}
-        <Link to={path}><img src={video.thumbnail_url} height={110} width={195}/></Link>
+        <Link to={path}>
+          <img src={video.thumbnail_url} height={110} width={195}/>
+        </Link>
 
         {/* details */}
         <div>

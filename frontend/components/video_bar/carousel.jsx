@@ -15,6 +15,7 @@ class App extends React.Component {
         slidesToScroll={numToSlide}
         height={"250px"}
         widht={"1265px"}
+        dragging={false}
         decorators={[{
           component: React.createClass({
             render() {
