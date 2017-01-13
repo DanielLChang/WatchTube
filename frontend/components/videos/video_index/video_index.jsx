@@ -1,7 +1,7 @@
 import React from 'react';
-import VideoItem from '../videos/video_item';
+import VideoItem from '../video_item';
 import VideoBar from '../video_bar/video_bar';
-import { shuffleVideos } from '../../util/util_functions';
+import { shuffleVideos } from '../../../util/util_functions';
 
 class VideoIndex extends React.Component {
   constructor(props) {
@@ -28,10 +28,10 @@ class VideoIndex extends React.Component {
     const { count } = this.state;
     const width = $(window).width();
 
-    if (width < 1330) this.setState({ count: 5 });
-    if (width < 1125) this.setState({ count: 4 });
-    if (width < 900) this.setState({ count: 3 });
-    if (width < 700) this.setState({ count: 2 });
+    if (width < 1335) this.setState({ count: 5 });
+    if (width < 1130) this.setState({ count: 4 });
+    if (width < 915) this.setState({ count: 3 });
+    if (width < 710) this.setState({ count: 2 });
   }
 
   shuffle(videos) {
@@ -46,23 +46,23 @@ class VideoIndex extends React.Component {
     return (
       <div className="video-index">
         <VideoBar
-          videos={ this.shuffle(videos) }
+          videos={ this.props.row1 }
           count={ count }
           title="Recommended"/>
         <VideoBar
-          videos={ this.shuffle(videos) }
+          videos={ this.props.row2 }
           count={ count }
           title="Hot"/>
         <VideoBar
-          videos={ this.shuffle(videos) }
+          videos={ this.props.row3 }
           count={ count }
           title="Trending"/>
         <VideoBar
-          videos={ this.shuffle(videos) }
+          videos={ this.props.row4 }
           count={ count }
           title="New"/>
         <VideoBar
-          videos={ this.shuffle(videos) }
+          videos={ this.props.row5 }
           count={ count }
           title="Old"/>
       </div>

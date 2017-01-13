@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import GreetingContainer from './greeting/greeting_container';
 import Footer from './footer/footer';
 
-import VideoIndex from './video_index/video_index';
+import VideoIndex from './videos/video_index/video_index';
 
 import ReactPlayer from 'react-player';
 

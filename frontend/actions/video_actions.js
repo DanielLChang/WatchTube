@@ -26,3 +26,10 @@ export const getAllVideos = () => (dispatch) => (
       (err) => dispatch(receiveErrors(err.responseJSON))
   )
 );
+
+export const getOneVideo = (id) => (dispatch) => (
+  VideoAPIUtil.fetchVideo(id).then(
+    (video) => dispatch(receiveVideo(video)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
+  )
+);

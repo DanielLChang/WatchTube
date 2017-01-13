@@ -4,7 +4,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
-import VideoIndexContainer from './video_index/video_index_container';
+import VideoIndexContainer from './videos/video_index/video_index_container';
+import VideoShowContainer from './videos/video_show/video_show_container';
 
 const Root = ({ store }) => {
 
@@ -33,6 +34,8 @@ const Root = ({ store }) => {
           <Router path="/login"
             component={ SessionFormContainer }
             onEnter={ _redirectIfLoggedIn }/>
+          <Router path="videos/:id"
+            component={ VideoShowContainer }/>
         </Route>
       </Router>
     </Provider>

@@ -1,7 +1,7 @@
 import React from 'react';
-import VideoItem from '../videos/video_item';
+import VideoItem from '..//video_item';
 import Carousel from './carousel.jsx';
-import { getVideoDetails } from '../../util/util_functions';
+import { getVideoDetails } from '../../../util/util_functions';
 
 const VideoBar = (props) => {
 
