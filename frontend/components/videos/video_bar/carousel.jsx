@@ -21,6 +21,7 @@ class App extends React.Component {
             render() {
               return (
                 <button
+                  className="left-button"
                   onClick={this.props.previousSlide}>
                   {"<"}
                 </button>
@@ -33,6 +34,7 @@ class App extends React.Component {
             render() {
               return (
                 <button
+                  className="right-button"
                   onClick={this.props.nextSlide}>
                   {">"}
                 </button>
