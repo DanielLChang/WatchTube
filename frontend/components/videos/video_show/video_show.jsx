@@ -19,7 +19,7 @@ class VideoShow extends React.Component {
     if (!video) return null;
     const date = new Date(video.created_date).toDateString().slice(3);
 
-    // debugger;
+    debugger;
 
     return(
       <div className="video-show-container">
