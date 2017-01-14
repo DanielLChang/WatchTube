@@ -8,7 +8,6 @@ class VideoShow extends React.Component {
   constructor(props) {
     super(props);
 
-
   }
 
   componentDidMount() {
@@ -19,8 +18,6 @@ class VideoShow extends React.Component {
     const { video } = this.props;
     if (!video) return null;
     const date = new Date(video.created_date).toDateString().slice(3);
-
-    debugger;
 
     return(
       <div className="video-show-container">
@@ -49,7 +46,7 @@ class VideoShow extends React.Component {
         </div>
 
         <div className="video-sidebar">
-          
+
         </div>
 
       </div>

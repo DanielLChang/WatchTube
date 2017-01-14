@@ -18,13 +18,13 @@ class App extends React.Component {
 
     return (
       <div className="app-page">
-        <header>
+        <header className="app-header">
           <LeftNav/>
           <SearchBar/>
           <RightNavContainer/>
         </header>
 
-        <div>
+        <div className="app-body">
           { children }
         </div>
 

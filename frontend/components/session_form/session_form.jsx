@@ -23,10 +23,6 @@ class SessionForm extends React.Component {
     }
   }
 
-  clearErrors() {
-    this.setState({ errors: [] });
-  }
-
   renderErrors() {
     return(
       <ul className="login-signup-errors">
@@ -52,22 +48,19 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    const text = this.props.formType === "login" ? "Sign In" : "Create Account";
+    const text = this.props.formType === "login" ? "Log in" : "Create account";
 
-    if (this.props.formType === "login") {
       return (
         <div className="login-form-container">
-          <form className="login-form-box" onSubmit={this.handleSubmit}>
-            <h2>
-              <img
-                className="logo-static"
-                src={require('../../../app/assets/images/logo-title.png')}/>
-            </h2>
-            <h3>
+          <form className="login-form-form" onSubmit={this.handleSubmit}>
+            <img
+              className="login-form-logo"
+              src={require('../../../app/assets/images/logo-title.png')}/>
+            <h3 className="login-form-message">
               {text} and start watching!
             </h3>
 
-            <div className="login-form">
+            <div className="login-input-form">
               <label className="login-input">
                 <input
                   type="text"
@@ -76,7 +69,6 @@ class SessionForm extends React.Component {
                   onChange={this.update("username")}/>
               </label>
 
-              <br/>
               <label className="login-input">
                 <input
                   type="password"
@@ -90,64 +82,12 @@ class SessionForm extends React.Component {
               <label className="login-input">
                 <input className="login-button" type="submit" value={text} />
               </label>
-
             </div>
 
           </form>
         </div>
       );
     }
-
-    return (
-      <div className="login-form-container">
-        <form className="login-form-box" onSubmit={this.handleSubmit}>
-          <h2>
-            <img
-              className="logo-static"
-              src={require('../../../app/assets/images/logo-title.png')}/>
-          </h2>
-          <h3>
-            {text} and start watching!
-          </h3>
-
-          <div className="login-form">
-            <label className="login-input">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                value={this.state.email}
-                onChange={this.update("email")}/>
-            </label>
-
-            <br/>
-            <label className="login-input">
-              <input
-                type="text"
-                placeholder="Enter your username"
-                value={this.state.username}
-                onChange={this.update("username")}/>
-            </label>
-
-            <br/>
-            <label className="login-input">
-              <input
-                type="password"
-                placeholder="Enter your password"
-                value={this.state.password}
-                onChange={this.update("password")}/>
-            </label>
-
-            {this.renderErrors()}
-
-            <label className="login-input">
-              <input className="login-button" type="submit" value={text} />
-            </label>
-          </div>
-
-        </form>
-      </div>
-    );
-  }
 
 }
 

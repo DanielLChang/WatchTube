@@ -5,11 +5,11 @@ import VideoIndex from './video_index';
 
 const mapStateToProps = ({ videos }, ownProps) => {
   if(typeof videos.list_videos !== "undefined") {
-    let row1 = shuffleVideos(videos.list_videos);
-    let row2 = shuffleVideos(videos.list_videos);
-    let row3 = shuffleVideos(videos.list_videos);
-    let row4 = shuffleVideos(videos.list_videos);
-    let row5 = shuffleVideos(videos.list_videos);
+    let row1 = shuffleVideos(videos.list_videos).slice(0, 10);
+    let row2 = shuffleVideos(videos.list_videos).slice(0, 10);
+    let row3 = shuffleVideos(videos.list_videos).slice(0, 10);
+    let row4 = shuffleVideos(videos.list_videos).slice(0, 10);
+    let row5 = shuffleVideos(videos.list_videos).slice(0, 10);
 
     return ({
       videos: videos.list_videos,

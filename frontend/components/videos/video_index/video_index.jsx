@@ -43,11 +43,6 @@ class VideoIndex extends React.Component {
     }
   }
 
-  shuffle(videos) {
-    if(typeof videos === "undefined") return undefined;
-    return shuffleVideos(videos).slice();
-  }
-
   render() {
     const { videos } = this.props;
     const { count } = this.state;

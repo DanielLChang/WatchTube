@@ -1,22 +1,28 @@
 import React from 'react';
-import VideoItem from '..//video_item';
+import VideoItem from '../video_item';
 import Carousel from './carousel.jsx';
 import { getVideoDetails } from '../../../util/util_functions';
 
-const VideoBar = (props) => {
+class VideoBar extends React.Component {
 
-  const { title, videos, count } = props;
-  if(typeof videos === 'undefined') return null;
-  return(
-    <div className="carousel-container">
-      <div className="carousel">
-        <h1 className="carousel-title">{ title }</h1>
-        <Carousel
-          numToSlide={ count }
-          videos={ getVideoDetails(videos) }/>
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { title, videos, count } = this.props;
+    if(typeof videos === 'undefined') return null;
+
+    return(
+      <div className="carousel-container">
+        <div className="carousel">
+          <div className="carousel-title">{ title }</div>
+
+          <Carousel videos={ getVideoDetails(videos) } numToSlide={ count }/>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default VideoBar;
