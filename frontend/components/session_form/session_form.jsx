@@ -63,6 +63,7 @@ class SessionForm extends React.Component {
             <div className="login-input-form">
               <label className="login-input">
                 <input
+                  className="login-input-text"
                   type="text"
                   placeholder="Enter your username"
                   value={this.state.username}
@@ -71,6 +72,7 @@ class SessionForm extends React.Component {
 
               <label className="login-input">
                 <input
+                  className="login-input-text"
                   type="password"
                   placeholder="Enter your password"
                   value={this.state.password}
