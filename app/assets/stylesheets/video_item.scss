@@ -1,0 +1,29 @@
+.video-item {
+  float: left;
+  text-align: left;
+  a:hover {
+    text-decoration: underline;
+  }
+  img{
+    float: left;
+    width: 200px;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+  .video-item-title {
+    text-align: left;
+    font-size: 13px;
+    padding: 2px;
+    color: black;
+  }
+  .video-item-username {
+    font-size: 11px;
+    color: #858789;
+    padding: 3px;
+  }
+  .video-item-views {
+    font-size: 11px;
+    color: #858789;
+    padding: 3px;
+  }
+}

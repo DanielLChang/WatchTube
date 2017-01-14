@@ -2,14 +2,12 @@
   display: flex;
   justify-content: center;
   padding-top: 5%;
-  // border: 1px solid black;
   .login-form-form {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
     flex-direction: column;
-    // border: 1px solid black;
     background-color: #f7f7f7;
     box-shadow: 1px 1px 5px #888888;
     border-radius: 5px;
@@ -17,7 +15,6 @@
     padding-right: 50px;
     padding-bottom: 50px;
     .login-form-logo {
-      // border: 1px solid black;
       padding-left: 25px;
       height: 45px;
       width: 155px;
@@ -64,6 +61,7 @@
       background-color: #498bf4;
       margin: 15px;
       margin-bottom: 0;
+      font-size: 13px;
     }
     .login-button:hover {
       border: 1px solid #054dc1;
@@ -77,51 +75,3 @@
     }
   }
 }
-
-// .logo-static {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 45px;
-//   padding-left: 65px;
-// }
-//
-// .login-form-container {
-//   display: flex;
-//   justify-content: center;
-//   padding-top: 5%;
-// }
-//
-// .login-form {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
-//
-// .login-form-box {
-
-// }
-//
-// .login-input {
-//   text-align: center;
-// }
-//
-
-//
-
-//
-// h2 {
-//   text-align: center;
-//   font-size: 23px;
-//   margin: 35px;
-// }
-//
-// h3 {
-//   text-align: center;
-//   padding: 30px;
-//   padding-top: 0;
-// }
-//
-// input {
-
-// }
