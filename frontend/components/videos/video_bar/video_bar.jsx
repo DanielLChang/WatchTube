@@ -7,7 +7,6 @@ const VideoBar = (props) => {
 
   const { title, videos, count } = props;
   if(typeof videos === 'undefined') return null;
-
   return(
     <div className="carousel-container">
       <div className="carousel">

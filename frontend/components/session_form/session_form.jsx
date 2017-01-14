@@ -23,12 +23,8 @@ class SessionForm extends React.Component {
     }
   }
 
-  navLink() {
-    if (this.props.formType === 'login') {
-      return <Link to='/signup'>sign up instead</Link>;
-    } else {
-      return <Link to='/login'>log in instead</Link>;
-    }
+  clearErrors() {
+    this.setState({ errors: [] });
   }
 
   renderErrors() {
@@ -93,18 +89,6 @@ class SessionForm extends React.Component {
 
               <label className="login-input">
                 <input className="login-button" type="submit" value={text} />
-              </label>
-
-              <label className="login-input">
-                <input className="login-button"
-                  type="submit"
-                  value="Demo"
-                  onClick={() => this.setState({
-                    email: "demo@gmail.com",
-                    username: "Demo",
-                    password: "password"
-                  })}>
-                </input>
               </label>
 
             </div>
