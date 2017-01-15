@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getOneVideo } from '../../../actions/video_actions';
+import { getOneVideo, getAllVideos } from '../../../actions/video_actions';
 import VideoShow from './video_show';
 
 const mapStateToProps = ({ session, videos }, ownProps) => ({
@@ -10,7 +10,8 @@ const mapStateToProps = ({ session, videos }, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getOneVideo: (video) => dispatch(getOneVideo(video))
+  getOneVideo: (video) => dispatch(getOneVideo(video)),
+  getAllVideos: () => dispatch(getAllVideos())
 });
 
 export default connect(

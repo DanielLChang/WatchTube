@@ -12,12 +12,30 @@ class VideoShow extends React.Component {
 
   componentDidMount() {
     this.props.getOneVideo(this.props.id);
+    this.props.getAllVideos();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({ videos: this.getSidebarVideos(nextProps.videos) });
+  }
+
+  getSidebarVideos(videos) {
+    if (typeof videos === 'undefined') return null;
+    const sidebarVideos = shuffleVideos(videos).slice(0, 5);
+
+    return sidebarVideos.map((video, idx) => (
+      <div className="sidebar-videos" key={idx}>
+        <VideoItem video={video}/>
+      </div>
+    ));
   }
 
   render() {
     const { video } = this.props;
     if (!video) return null;
     const date = new Date(video.created_date).toDateString().slice(3);
+
+    debugger;
 
     return(
       <div className="video-show-container">
@@ -26,7 +44,7 @@ class VideoShow extends React.Component {
             <ReactPlayer
               url={video.video_url}
               controls={true}
-              playing={false}/>
+              playing={true}/>
           </div>
 
           <div className="video-title-container">
@@ -45,8 +63,11 @@ class VideoShow extends React.Component {
           </div>
         </div>
 
-        <div className="video-sidebar">
-
+        <div className="video-sidebar-container">
+          <div className="video-sidebar-title">Related Videos</div>
+          <div className="video-sidebar-videos">
+            {this.state.videos}
+          </div>
         </div>
 
       </div>
