@@ -13,7 +13,8 @@ class Api::CommentsController < ApplicationController
   def update
     @comment = Comment.find(params[:id])
 
-    if @comment.update(comment_params)
+    if @comment
+      @comment.update(comment_params)
       render :update
     else
       render json: @comment.errors.full_messages, status: 422

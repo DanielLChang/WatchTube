@@ -14,6 +14,8 @@ class Comments extends React.Component {
     let { comments } = this.props;
     if (!comments) comments = [];
 
+    debugger;
+
     comments.sort((first, second) => {
       if (first.updated_at > second.update_at) {
         return -1;
@@ -33,14 +35,14 @@ class Comments extends React.Component {
 
   render() {
     const { videoId, currentUser, comments, createComment } = this.props;
+
     let numComments = "No comments to display";
     if(comments) numComments = comments.length;
-    {/*toLocaleString may be needed*/}
 
     return(
       <div className="comments-container">
         <div className="comments-title">
-          Comments • {numComments}
+          COMMENTS • {numComments}
         </div>
 
         <CommentForm
@@ -48,8 +50,8 @@ class Comments extends React.Component {
           currentUser={ currentUser }
           processForm={ createComment } />
 
-        <div className="all-comments-container">
-          {this.fetchComments}
+        <div className="comment-item-container">
+          {this.fetchComments()}
         </div>
       </div>
     );

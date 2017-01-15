@@ -4,6 +4,7 @@ export const GET_COMMENTS = "GET_COMMENTS";
 export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
 export const RECEIVE_COMMENT = "RECIEVE_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
+export const RECEIVE_ERRORS = "RECIEVE_ERRORS";
 
 export const getComments = (videoId) => ({
   type: GET_COMMENTS,
@@ -25,20 +26,28 @@ export const removeComment = (comment) => ({
   comment
 });
 
+export const receiveErrors = (errors) => ({
+  type: RECEIVE_ERRORS,
+  errors
+});
+
 export const createComment = (comment) => (dispatch) => (
   CommentAPIUtil.createComment(comment).then(
-    (comment) => dispatch(receiveComment(comment))
+    (comment) => dispatch(receiveComment(comment)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
   )
 );
 
 export const updateComment = (comment) => (dispatch) => (
   CommentAPIUtil.updateComment(comment).then(
-    (comment) => dispatch(receiveComment(comment))
+    (comment) => dispatch(receiveComment(comment)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
   )
 );
 
 export const deleteComment = (id) => (dispatch) => (
   CommentAPIUtil.deleteComment(id).then(
-    (comment) => dispatch(removeComment(comment))
+    (comment) => dispatch(removeComment(comment)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
   )
 );

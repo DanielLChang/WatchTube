@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import { createComment,
   updateComment,
-  deleteComment } from '../../actions/comment_actions';
-import Comments from './comment';
+  deleteComment } from '../../../../actions/comment_actions';
+import Comments from './comments';
 
 const mapStateToProps = ({ session, videos }, ownProps) => ({
-  videoId: videos.currentVideo.id,
-  currentUser: session.currentUser,
-  comments: videos.currentVideo.comments
+    videoId: videos.currentVideo.id,
+    currentUser: session.currentUser,
+    comments: videos.currentVideo.comments
 });
 
 const mapDispatchToProps = (dispatch) => ({
