@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { timeAgo } from '../../util/util_functions';
 
-class VideoItem extends React.Component {
+class SidebarVideoItem extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -13,26 +13,26 @@ class VideoItem extends React.Component {
     // debugger;
 
     return (
-      <div className="video-item">
+      <div className="sidebar-video-item">
         {/* title */}
         <Link to={path}>
-          <img className="video-item-thumbnail" src={video.thumbnail_url} height={110} width={195}/>
+          <img className="sidebar-video-item-thumbnail" src={video.thumbnail_url} height={110} width={195}/>
         </Link>
 
         {/* details */}
-        <div>
+        <div className="sidebar-video-item-details">
           {/* title */}
-          <div className="video-item-title">
+          <div className="sidebar-video-item-title">
             <Link to={path}>{video.title}</Link>
           </div>
           {/* username */}
           {/* No user page right now. Link to Home */}
-          <div className="video-item-username">
+          <div className="sidebar-video-item-username">
             <Link to='/'>{video.user.username}</Link>
           </div>
           {/* views and timeago */}
-          <div className="video-item-views">
-            {video.views} views · {timeAgo(video.created_at)} ago
+          <div className="sidebar-video-item-views">
+            {video.views} views
           </div>
         </div>
       </div>
@@ -40,4 +40,4 @@ class VideoItem extends React.Component {
   }
 }
 
-export default VideoItem;
+export default SidebarVideoItem;

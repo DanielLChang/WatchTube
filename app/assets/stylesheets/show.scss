@@ -1,7 +1,10 @@
 .video-show-container {
   float: left;
   padding: 5%;
+  padding-bottom: 0;
   width: 90%;
+  display: flex;
+  justify-content: space-around;
   .main-video-container {
     float: left;
     width: 640px;
@@ -44,6 +47,55 @@
         font-size: 13px;
         padding-bottom: 2%;
         border-bottom: 1px solid #dedfe0;
+      }
+    }
+  }
+  .video-sidebar-container {
+    height: auto;
+    width: 25%;
+    float: right;
+    background-color: white;
+    padding: 2%;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    .video-sidebar-title {
+      font-weight: 500;
+      padding-bottom: 5%;
+    }
+    .sidebar-video-item {
+      display: flex;
+      padding-bottom: 5%;
+      .sidebar-video-item-thumbnail {
+        float: left;
+        width: 170px;
+        height: 95px;
+        margin-bottom: 7px;
+      }
+      .sidebar-video-item-details {
+        display: flex;
+        width: 100%;
+        float: right;
+        flex-direction: column;
+        padding-left: 5%;
+        .sidebar-video-item-title {
+          text-align: left;
+          font-size: 13px;
+          padding: 2px;
+          color: black;
+          float: left;
+        }
+        .sidebar-video-item-username {
+          font-size: 11px;
+          color: #858789;
+          padding: 3px;
+          float: left;
+        }
+        .sidebar-video-item-views {
+          font-size: 11px;
+          color: #858789;
+          float: left;
+          padding: 3px;
+        }
       }
     }
   }

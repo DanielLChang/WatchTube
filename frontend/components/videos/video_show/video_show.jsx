@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import VideoItem from '../video_item';
+import SidebarVideoItem from '../sidebar_video_item';
 import VideoBar from '../video_bar/video_bar';
 import { shuffleVideos } from '../../../util/util_functions';
 
@@ -8,9 +8,7 @@ class VideoShow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      video_url: "",
       videos: [],
-      changeVideo: false
     };
   }
 
@@ -18,9 +16,6 @@ class VideoShow extends React.Component {
     this.props.getOneVideo(this.props.id);
     this.props.getAllVideos();
 
-    if ((this.props.video) && (this.props.id === this.props.video.id)) {
-      this.setState({ changeVideo: true });
-    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -32,22 +27,19 @@ class VideoShow extends React.Component {
 
   getSidebarVideos(videos) {
     if (typeof videos === 'undefined') return null;
-    const sidebarVideos = shuffleVideos(videos).slice(0, 5);
+    const sidebarVideos = shuffleVideos(videos).slice(0, 8);
 
     return sidebarVideos.map((video, idx) => (
       <div className="sidebar-videos" key={idx}>
-        <VideoItem video={video}/>
+        <SidebarVideoItem video={video}/>
       </div>
     ));
   }
 
   render() {
-    // if (this.state.changeVideo) {
       const { video } = this.props;
       if (!video) return null;
       const date = new Date(video.created_date).toDateString().slice(3);
-
-      // debugger;
 
       return(
         <div className="video-show-container">
@@ -84,7 +76,6 @@ class VideoShow extends React.Component {
 
         </div>
       );
-    // } else return null;
   }
 }
 
