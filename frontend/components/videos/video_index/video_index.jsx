@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoItem from '../video_item';
 import VideoBar from '../video_bar/video_bar';
-import { shuffleVideos } from '../../../util/util_functions';
+import { shuffleVideos } from '../../../util/api_util_functions';
 
 class VideoIndex extends React.Component {
   constructor(props) {

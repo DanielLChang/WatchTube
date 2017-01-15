@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import SidebarVideoItem from '../sidebar_video_item';
 import VideoBar from '../video_bar/video_bar';
-import { shuffleVideos } from '../../../util/util_functions';
+import { shuffleVideos } from '../../../util/api_util_functions';
 
 class VideoShow extends React.Component {
   constructor(props) {

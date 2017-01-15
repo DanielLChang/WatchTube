@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { getAllVideos } from '../../../actions/video_actions';
-import { shuffleVideos } from '../../../util/util_functions';
+import { shuffleVideos } from '../../../util/api_util_functions';
 import VideoIndex from './video_index';
 
 const mapStateToProps = ({ videos }, ownProps) => {

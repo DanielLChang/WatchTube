@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { timeAgo } from '../../util/util_functions';
+import { timeAgo } from '../../util/api_util_functions';
 
 class VideoItem extends React.Component {
   constructor(props) {
