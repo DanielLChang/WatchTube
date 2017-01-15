@@ -156,7 +156,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Jinky Jenkins & Lucky Lou",
-    description: "Check out this amazingly crafted, multi-award CGI animated winning short film by the talented Michael Bidinger and Michelle Kwon! -- When the chaotically misfortunate Jenkins and the monotonously lucky Lou run into each other one morning, they find a thrilling and fulfilling change of pace as they hurtle down the hills of San Francisco in an ice cream cart.",
+    description: "Check out this amazingly crafted, multi-award CGI animated winning short film by the talented Michael Bidinger and Michelle Kwon!",
     video_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484283629/Jinky_Jenkins_Lucky_Lou_grfclp.mp4",
     thumbnail_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484283629/Jinky_Jenkins_Lucky_Lou_grfclp.jpg",
     user_id: users.sample.id,
@@ -167,7 +167,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Human Week",
-    description: "The actions and behaviours of the “Homo Sapiens” species have often been the subject of much speculation amongst sharks. Questions like “How do they not fall over?” and “What exactly is a space hopper?” have tormented sharks for centuries. Now, we join them for a sneak peek into the trials and tribulations only found in #HumanWeek! Hungry Shark Shorts is brought to you by Future Games of London, A Ubisoft studio.",
+    description: "The actions and behaviours of the “Homo Sapiens” species. Hungry Shark Shorts is brought to you by Future Games of London, A Ubisoft studio.",
     video_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484283914/Human_Week_fp1ljk.mp4",
     thumbnail_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484283914/Human_Week_fp1ljk.jpg",
     user_id: users.sample.id,
@@ -379,6 +379,17 @@ videos.push(
     description: "Concept and Animation by PES. Don't drink and drive.",
     video_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484284402/Bacardi_Train_bvuvf1.mp4",
     thumbnail_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484284402/Bacardi_Train_bvuvf1.jpg",
+    user_id: users.sample.id,
+    views: rand(10000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "LITTY",
+    description: "Sid the Science Kid goes HAM with friends",
+    video_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484455768/LITTY_ayskj7.mp4",
+    thumbnail_url: "http://res.cloudinary.com/danielcloud/video/upload/v1484455768/LITTY_ayskj7.jpg",
     user_id: users.sample.id,
     views: rand(10000000)
   })
