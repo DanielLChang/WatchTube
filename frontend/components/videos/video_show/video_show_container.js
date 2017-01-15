@@ -10,7 +10,7 @@ const mapStateToProps = ({ session, videos }, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getOneVideo: (video) => dispatch(getOneVideo(video)),
+  getOneVideo: (id) => dispatch(getOneVideo(id)),
   getAllVideos: () => dispatch(getAllVideos())
 });
 

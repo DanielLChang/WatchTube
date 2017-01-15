@@ -7,16 +7,27 @@ import { shuffleVideos } from '../../../util/util_functions';
 class VideoShow extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      video_url: "",
+      videos: [],
+      changeVideo: false
+    };
   }
 
   componentDidMount() {
     this.props.getOneVideo(this.props.id);
     this.props.getAllVideos();
+
+    if ((this.props.video) && (this.props.id === this.props.video.id)) {
+      this.setState({ changeVideo: true });
+    }
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ videos: this.getSidebarVideos(nextProps.videos) });
+    if (this.props.id !== nextProps.id) {
+      this.props.getOneVideo(nextProps.id);
+    }
+    this.setState({ videos: this.getSidebarVideos(nextProps.videos)} );
   }
 
   getSidebarVideos(videos) {
@@ -31,47 +42,49 @@ class VideoShow extends React.Component {
   }
 
   render() {
-    const { video } = this.props;
-    if (!video) return null;
-    const date = new Date(video.created_date).toDateString().slice(3);
+    // if (this.state.changeVideo) {
+      const { video } = this.props;
+      if (!video) return null;
+      const date = new Date(video.created_date).toDateString().slice(3);
 
-    debugger;
+      // debugger;
 
-    return(
-      <div className="video-show-container">
-        <div className="main-video-container">
-          <div className='video-player'>
-            <ReactPlayer
-              url={video.video_url}
-              controls={true}
-              playing={true}/>
+      return(
+        <div className="video-show-container">
+          <div className="main-video-container">
+            <div className='video-player'>
+              <ReactPlayer
+                url={video.video_url}
+                controls={true}
+                playing={true}/>
+            </div>
+
+            <div className="video-title-container">
+              <div className="video-title">{video.title}</div>
+              <div className="video-username">{video.user.username}</div>
+              <div className="video-views">{video.views} views</div>
+            </div>
+
+            <div className="video-detail-container">
+              <div className="video-date">Published on {date}</div>
+              <div className="video-description">{video.description}</div>
+            </div>
+
+            <div className="video-comments">
+
+            </div>
           </div>
 
-          <div className="video-title-container">
-            <div className="video-title">{video.title}</div>
-            <div className="video-username">{video.user.username}</div>
-            <div className="video-views">{video.views} views</div>
+          <div className="video-sidebar-container">
+            <div className="video-sidebar-title">Related Videos</div>
+            <div className="video-sidebar-videos">
+              {this.state.videos}
+            </div>
           </div>
 
-          <div className="video-detail-container">
-            <div className="video-date">Published on {date}</div>
-            <div className="video-description">{video.description}</div>
-          </div>
-
-          <div className="video-comments">
-
-          </div>
         </div>
-
-        <div className="video-sidebar-container">
-          <div className="video-sidebar-title">Related Videos</div>
-          <div className="video-sidebar-videos">
-            {this.state.videos}
-          </div>
-        </div>
-
-      </div>
-    );
+      );
+    // } else return null;
   }
 }
 
