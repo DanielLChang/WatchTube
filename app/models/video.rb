@@ -9,5 +9,6 @@ class Video < ApplicationRecord
   # validates_attachment_content_type :video, content_type: /\Avideo\/.*\Z/
 
   belongs_to :user
+  has_many :comments
 
 end
