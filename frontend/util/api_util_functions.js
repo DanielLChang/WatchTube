@@ -1,6 +1,12 @@
 import React from 'react';
 import VideoItem from '../components/videos/video_item';
 
+export const getCommentIndex = (comments, comment) => {
+  return comments.findIndex((cmt) => {
+    return (cmt.id === comment.id) ? true : false;
+  });
+};
+
 export const getVideoDetails = (videos) => {
   if (typeof videos === 'undefined') return null;
 

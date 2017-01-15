@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import SidebarVideoItem from '../sidebar_video_item';
 import VideoBar from '../video_bar/video_bar';
+import Comments from '../../comments/comments';
 import { shuffleVideos } from '../../../util/api_util_functions';
 
 class VideoShow extends React.Component {
@@ -62,9 +63,7 @@ class VideoShow extends React.Component {
               <div className="video-description">{video.description}</div>
             </div>
 
-            <div className="video-comments">
-
-            </div>
+            <Comments/>
           </div>
 
           <div className="video-sidebar-container">

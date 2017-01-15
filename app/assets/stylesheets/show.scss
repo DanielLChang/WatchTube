@@ -4,14 +4,15 @@ video {
 
 .video-show-container {
   float: left;
-  padding: 5%;
-  padding-bottom: 0;
+  padding: 5% 0;
+  margin: 0 5%;
   width: 90%;
   display: flex;
   justify-content: space-around;
   .main-video-container {
     float: left;
     width: 640px;
+    margin-right: 3%;
     .video-player {
       margin-bottom: 2%;
     }

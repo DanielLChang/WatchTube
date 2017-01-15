@@ -394,3 +394,51 @@ videos.push(
     views: rand(10000000)
   })
 )
+
+Comment.destroy_all
+
+all_comments = [
+  "Love this video.",
+  "HAHAHAHAHAHAHA.",
+  "This video is great!",
+  "10/10 would recommend.",
+  "I wish there were more videos like this.",
+  "Please hire Daniel Chang",
+  "Amazing video",
+  "First",
+  "Like if Daniel brought you here",
+  "Where are the Pokemon videos?",
+  "Watching in 2017",
+  "LMAO",
+  "ROFL",
+  "THIS IS THE BEST VIDEO EVER!",
+  "What am I doing here?",
+  "What are we all doing here?",
+  "What is the answer to life",
+  "42 is the answer to life",
+  "I should read more books",
+  "https://github.com/DanielLChang best github I've seen!",
+  "Shameless promoting.",
+  "Was not disappointed",
+  "This is so chill",
+  "Join AppAcademy!",
+  "Funky!!",
+  "Love the thumbnail picture",
+  "Watched this live. Was great.",
+  "Thanks for all the hard work",
+  "Wow I remember this!",
+  "Absolutely loving this. Killed it!",
+  "When did this come out?",
+  "YESSSSS!",
+  "Better quality please.",
+  "I love this!"
+]
+
+comments = []
+100.times do
+  comments.push(Comment.create({
+    body: all_comments.sample,
+    user_id: users.sample.id,
+    video_id: videos.sample.id
+  }))
+end
