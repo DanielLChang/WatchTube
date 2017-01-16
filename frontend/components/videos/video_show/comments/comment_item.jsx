@@ -1,5 +1,5 @@
 import React from 'react';
-
+import EditCommentForm from './edit_comment_form';
 import { timeAgo } from '../../../../util/api_util_functions';
 
 class CommentItem extends React.Component {
@@ -10,7 +10,7 @@ class CommentItem extends React.Component {
     };
 
     this.getCommentButtons = this.getCommentButtons.bind(this);
-    this.handleEdit = this.handleEdit.bind(this);
+    this.toggleEditForm = this.toggleEditForm.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
   }
 
@@ -21,7 +21,7 @@ class CommentItem extends React.Component {
         <div className="comment-buttons-container">
           <div className="comment-buttons-padding">
             <button className="comment-buttons"
-              onClick={ this.handleEdit }>Edit</button>
+              onClick={ this.toggleEditForm }>Edit</button>
           </div>
           <div className="comment-buttons-padding">
             <button className="comment-buttons"
@@ -32,8 +32,11 @@ class CommentItem extends React.Component {
     }
   }
 
-  handleEdit(e) {
-    e.preventDefault();
+  toggleEditForm(e) {
+    if (e) e.preventDefault();
+    if (this.state.editForm) {
+      this.setState({ editForm: false });
+    } else this.setState({ editForm: true });
   }
 
   handleDelete(e) {
@@ -47,7 +50,7 @@ class CommentItem extends React.Component {
     const { author, body, updated_at } = comment;
     const { editForm } = this.state;
 
-    return (
+    let commentItemContainer = (
       <div className="comment-item-container">
         <img className="comment-author-avatar" src={comment.author.avatar_url}/>
 
@@ -68,6 +71,22 @@ class CommentItem extends React.Component {
 
         {this.getCommentButtons(author, currentUser)}
 
+      </div>
+    );
+
+    if (editForm) {
+      commentItemContainer = (
+        <EditCommentForm
+          currentUser={currentUser}
+          comment={comment}
+          processForm={updateComment}
+          toggleEditForm={this.toggleEditForm}/>
+      );
+    }
+
+    return (
+      <div>
+        {commentItemContainer}
       </div>
     );
   }

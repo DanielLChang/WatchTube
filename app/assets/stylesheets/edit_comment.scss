@@ -1,0 +1,78 @@
+.edit-comment-item-container {
+  // padding-bottom: 2%;
+  .comment-form {
+    display: flex;
+    padding-bottom: 2%;
+    .edit-comment-author-avatar {
+      height: 50px;
+      background-color: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      margin-right: 5px;
+    }
+    .edit-comment-text {
+      padding-left: 5px;
+      width: 100%;
+    }
+    .editor-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .edit-comment-buttons {
+        display: flex;
+        float: right;
+        .submit-button {
+          float: right;
+          cursor: pointer;
+          border: 1px solid #054dc1;
+          border-radius: 3px;
+          color: #fff;
+          height: 25px;
+          width: 67px;
+          background-color: #4076F6;
+          font-size: 11px;
+          margin-left: 10px;
+        }
+        .submit-button:hover {
+          float: right;
+          cursor: pointer;
+          border: 1px solid #054dc1;
+          border-radius: 3px;
+          color: #fff;
+          height: 25px;
+          width: 67px;
+          background-color: #2F54D2;
+          font-size: 11px;
+          margin-left: 10px;
+        }
+        .submit-button:disabled {
+          background-color: #4975bc;
+          margin-left: 10px;
+        }
+        .cancel-button {
+          float: right;
+          cursor: pointer;
+          border: 1px solid #054dc1;
+          border-radius: 3px;
+          color: #fff;
+          height: 25px;
+          width: 67px;
+          background-color: #4076F6;
+          font-size: 11px;
+          margin-left: 10px;
+        }
+        .cancel-button:hover {
+          float: right;
+          cursor: pointer;
+          border: 1px solid #054dc1;
+          border-radius: 3px;
+          color: #fff;
+          height: 25px;
+          width: 67px;
+          background-color: #2F54D2;
+          font-size: 11px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
