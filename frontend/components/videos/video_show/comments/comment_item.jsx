@@ -5,12 +5,43 @@ import { timeAgo } from '../../../../util/api_util_functions';
 class CommentItem extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      editForm: false
+    };
 
+    this.getCommentButtons = this.getCommentButtons.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
+  }
+
+  getCommentButtons(author, currentUser) {
+    if (!currentUser) return null;
+    if (author.id === currentUser.id) {
+      return (
+        <div className="comment-buttons">
+          <button className="comment-edit-button"
+            onClick={ this.handleEdit }>Edit</button>
+          <button className="comment-delete-button"
+            onClick={ this.handleDelete }>Delete</button>
+        </div>
+      );
+    }
+  }
+
+  handleEdit(e) {
+    e.preventDefault();
+  }
+
+  handleDelete(e) {
+    e.preventDefault();
+    const { comment, deleteComment } = this.props;
+    deleteComment(comment.id);
   }
 
   render() {
-    const { comment } = this.props;
-    // debugger;
+    const { currentUser, comment, updateComment } = this.props;
+    const { author, body, updated_at } = comment;
+    const { editForm } = this.state;
 
     return (
       <div className="comment-item-container">
@@ -30,6 +61,8 @@ class CommentItem extends React.Component {
             {comment.body}
           </div>
         </div>
+
+        {this.getCommentButtons(author, currentUser)}
 
       </div>
     );
