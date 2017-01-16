@@ -31,8 +31,9 @@
     width: 100%;
     .login-input {
       width: 100%;
-      padding: 1%;
+      // padding: 1%;
       text-align: center;
+      margin-top: 15px;
     }
     .login-input-text {
       padding-left: 10px;
@@ -59,7 +60,6 @@
       height: 45px;
       width: 285px;
       background-color: #498bf4;
-      margin: 15px;
       margin-bottom: 0;
       font-size: 13px;
     }
@@ -70,7 +70,6 @@
       height: 45px;
       width: 285px;
       background-color: #3474db;
-      margin: 15px;
       margin-bottom: 0;
     }
   }

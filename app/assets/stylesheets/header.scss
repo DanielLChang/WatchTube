@@ -85,29 +85,34 @@
   float: right;
   margin-left: 25px;
   padding: 10px 0 10px 0;
-}
-
-.right-nav-button {
-  cursor: pointer;
-  border: 1px solid #054dc1;
-  border-radius: 3px;
-  color: #fff;
-  height: 25px;
-  width: 67px;
-  background-color: #4076F6;
-  font-size: 11px;
-  margin-right: 10px;
-  padding: 0;
-}
-.right-nav-button:hover {
-  cursor: pointer;
-  border: 1px solid #054dc1;
-  border-radius: 3px;
-  color: #fff;
-  height: 25px;
-  width: 67px;
-  background-color: #2F54D2;
-  font-size: 11px;
-  margin-right: 10px;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  .current-user-avatar {
+    height: 50px;
+    padding-right: 10px;
+  }
+  .right-nav-button {
+    cursor: pointer;
+    border: 1px solid #054dc1;
+    border-radius: 3px;
+    color: #fff;
+    height: 25px;
+    width: 67px;
+    background-color: #4076F6;
+    font-size: 11px;
+    margin-right: 10px;
+    padding: 0;
+  }
+  .right-nav-button:hover {
+    cursor: pointer;
+    border: 1px solid #054dc1;
+    border-radius: 3px;
+    color: #fff;
+    height: 25px;
+    width: 67px;
+    background-color: #2F54D2;
+    font-size: 11px;
+    margin-right: 10px;
+    padding: 0;
+  }
 }

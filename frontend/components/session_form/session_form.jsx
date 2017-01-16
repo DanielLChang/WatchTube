@@ -11,6 +11,8 @@ class SessionForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.emailForm = this.emailForm.bind(this);
+    this.renderDemo = this.renderDemo.bind(this);
   }
 
   componentDidUpdate() {
@@ -20,6 +22,35 @@ class SessionForm extends React.Component {
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
       this.props.router.push("/");
+    }
+  }
+
+  emailForm() {
+    if (this.props.formType !== "login" ) {
+      return(
+        <label className="login-input">
+          <input
+            className="login-input-text"
+            type="text"
+            placeholder="Enter your email"
+            value={this.state.email}
+            onChange={this.update("email")}/>
+        </label>
+      );
+    } else return null;
+  }
+
+  renderDemo() {
+    if (this.props.formType === "login") {
+      return(
+        <label className="login-input">
+          <input className="login-button" type="submit" value="Demo"
+            onClick={() => this.setState({
+              username: "Demo",
+              password: "password"
+            })}></input>
+        </label>
+      );
     }
   }
 
@@ -53,6 +84,7 @@ class SessionForm extends React.Component {
       return (
         <div className="login-form-container">
           <form className="login-form-form" onSubmit={this.handleSubmit}>
+
             <img
               className="login-form-logo"
               src={require('../../../app/assets/images/logo-title.png')}/>
@@ -61,6 +93,9 @@ class SessionForm extends React.Component {
             </h3>
 
             <div className="login-input-form">
+
+              {this.emailForm()}
+
               <label className="login-input">
                 <input
                   className="login-input-text"
@@ -84,13 +119,15 @@ class SessionForm extends React.Component {
               <label className="login-input">
                 <input className="login-button" type="submit" value={text} />
               </label>
+
+              {this.renderDemo()}
+
             </div>
 
           </form>
         </div>
       );
     }
-
 }
 
 export default withRouter(SessionForm);
