@@ -25,7 +25,19 @@ avatars = [
   'http://res.cloudinary.com/danielcloud/image/upload/v1484526123/caterpie_v0hlgw.png',
   'http://res.cloudinary.com/danielcloud/image/upload/v1484526123/bullbasaur_ofwn8u.png',
   'http://res.cloudinary.com/danielcloud/image/upload/v1484526122/charmander_whyy08.png',
-  'http://res.cloudinary.com/danielcloud/image/upload/v1484526122/abra_gmtn6u.png'
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526122/abra_gmtn6u.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528818/razz-berry_to5tfi.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528837/candy_l28vgg.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528836/player_homih9.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528834/pikachu_xtrtgz.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528834/backpack_jaq1hr.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528833/egg_l0jhbo.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528830/superball_gihqli.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528828/ultra-ball_acxeoj.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528827/mega-ball_zozj3x.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528827/star-1_guao4r.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528825/instinct_o8bhdk.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484528818/pokecoin_i5zqk1.png',
 ]
 
 User.destroy_all

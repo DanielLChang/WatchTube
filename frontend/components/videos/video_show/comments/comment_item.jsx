@@ -10,18 +10,27 @@ class CommentItem extends React.Component {
 
   render() {
     const { comment } = this.props;
+    // debugger;
 
     return (
       <div className="comment-item-container">
-        <div className="comment-item-author">
-          {comment.author.username}
+        <img className="comment-author-avatar" src={comment.author.avatar_url}/>
+
+        <div className="comment-item-details">
+          <div className="comment-user-details">
+            <div className="comment-author-username">
+              {comment.author.username}
+            </div>
+            <div className="comment-item-date">
+              {timeAgo(comment.updated_at)} ago
+            </div>
+          </div>
+
+          <div className="comment-item-body">
+            {comment.body}
+          </div>
         </div>
-        <div className="comment-item-date">
-          {timeAgo(comment.updated_at)} ago
-        </div>
-        <div className="comment-item-body">
-          {comment.body}
-        </div>
+
       </div>
     );
   }

@@ -16,13 +16,13 @@ class Comments extends React.Component {
 
     // debugger;
 
-    comments.sort((first, second) => {
-      if (first.updated_at > second.update_at) {
-        return -1;
-      } else if (first.updated_at === second.updated_at) {
-        return 0;
-      } else return 1;
-    });
+    // comments.sort((first, second) => {
+    //   if (first.updated_at > second.update_at) {
+    //     return -1;
+    //   } else if (first.updated_at === second.updated_at) {
+    //     return 0;
+    //   } else return 1;
+    // });
 
     return comments.map((comment) => (
       <CommentItem key={ comment.id }
@@ -50,7 +50,7 @@ class Comments extends React.Component {
           currentUser={ currentUser }
           processForm={ createComment } />
 
-        <div className="comment-item-container">
+        <div className="comment-items-container">
           {this.fetchComments()}
         </div>
       </div>
