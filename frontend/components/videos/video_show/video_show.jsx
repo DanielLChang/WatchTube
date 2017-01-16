@@ -53,7 +53,10 @@ class VideoShow extends React.Component {
 
             <div className="video-title-container">
               <div className="video-title">{video.title}</div>
-              <div className="video-username">{video.user.username}</div>
+              <div className="video-user-details">
+                <img className="video-avatar" src={video.user.avatar_url}/>
+                <div className="video-username">{video.user.username}</div>
+              </div>
               <div className="video-views">{video.views} views</div>
             </div>
 
