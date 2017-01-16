@@ -18,11 +18,15 @@ class CommentItem extends React.Component {
     if (!currentUser) return null;
     if (author.id === currentUser.id) {
       return (
-        <div className="comment-buttons">
-          <button className="comment-edit-button"
-            onClick={ this.handleEdit }>Edit</button>
-          <button className="comment-delete-button"
-            onClick={ this.handleDelete }>Delete</button>
+        <div className="comment-buttons-container">
+          <div className="comment-buttons-padding">
+            <button className="comment-buttons"
+              onClick={ this.handleEdit }>Edit</button>
+          </div>
+          <div className="comment-buttons-padding">
+            <button className="comment-buttons"
+              onClick={ this.handleDelete }>Delete</button>
+          </div>
         </div>
       );
     }
