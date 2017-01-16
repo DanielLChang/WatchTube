@@ -14,7 +14,7 @@ class Comments extends React.Component {
     let { comments } = this.props;
     if (!comments) comments = [];
 
-    debugger;
+    // debugger;
 
     comments.sort((first, second) => {
       if (first.updated_at > second.update_at) {
