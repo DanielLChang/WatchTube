@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+avatarPath = "#{Rails.root}/app/assets/images/avatars/";
+icons = Dir.entries(avatarPath).select{|file| file[/.*\.png/]}
 
 User.destroy_all
 users = []
@@ -12,7 +14,8 @@ users = []
 users.push(User.create!({
   username: "Demo",
   email: "demo@gmail.com",
-  password: "password"
+  password: "password",
+  avatar: File.new(avatarPath + icons.sample)
 }))
 
 50.times do
@@ -23,6 +26,7 @@ users.push(User.create!({
       username: username,
       email: Faker::Internet.email(username),
       password: "password",
+      avatar: File.new(avatarPath + icons.sample)
   })
 
   users.push(user) if user
