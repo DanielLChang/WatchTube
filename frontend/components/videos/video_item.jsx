@@ -22,17 +22,17 @@ class VideoItem extends React.Component {
         {/* details */}
         <div>
           {/* title */}
-          <div className="video-item-title">
-            <Link to={path}>{video.title}</Link>
+          <div>
+            <Link className="video-item-title" to={path}>{video.title}</Link>
           </div>
           {/* username */}
           {/* No user page right now. Link to Home */}
-          <div className="video-item-username">
-            <Link to='/'>{video.user.username}</Link>
+          <div>
+            <Link className="video-item-username" to='/'>{video.user.username}</Link>
           </div>
           {/* views and timeago */}
           <div className="video-item-views">
-            {video.views} views · {timeAgo(video.created_at)} ago
+            {video.views.toLocaleString()} views · {timeAgo(video.created_at)} ago
           </div>
         </div>
       </div>

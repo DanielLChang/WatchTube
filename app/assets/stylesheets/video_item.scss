@@ -2,8 +2,21 @@
   float: left;
   text-align: left;
   padding: 3px;
+  a:link {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
   a:hover {
+    color: #1b5dc6;
     text-decoration: underline;
+  }
+  a:active {
+    color: #1b5dc6;
+    text-decoration: none;
   }
   .video-item-thumbnail {
     float: left;
@@ -19,9 +32,26 @@
   }
   .video-item-username {
     font-size: 11px;
-    color: #858789;
+    // color: #858789;
     padding: 3px;
   }
+  .video-item-username:link {
+    color: #858789;
+    text-decoration: none;
+  }
+  .video-item-username:visited {
+    color: #858789;
+    text-decoration: none;
+  }
+  .video-item-username:hover {
+    color: #1b5dc6;
+    text-decoration: underline;
+  }
+  .video-item-username:active {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
+
   .video-item-views {
     font-size: 11px;
     color: #858789;

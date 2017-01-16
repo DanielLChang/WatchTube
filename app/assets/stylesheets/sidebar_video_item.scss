@@ -1,0 +1,60 @@
+.sidebar-video-item {
+  float: left;
+  text-align: left;
+  padding: 3px;
+  .sidebar-video-item-thumbnail {
+    float: left;
+    width: 200px;
+    height: 110px;
+    margin-bottom: 7px;
+  }
+  .sidebar-video-item-title {
+    text-align: left;
+    font-size: 13px;
+    padding: 2px;
+  }
+  .sidebar-video-item-title:link {
+    color: black;
+    text-decoration: none;
+  }
+  .sidebar-video-item-title:visited {
+    color: black;
+    text-decoration: none;
+  }
+  .sidebar-video-item-title:hover {
+    color: #1b5dc6;
+    text-decoration: underline;
+  }
+  .sidebar-video-item-title:active {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
+
+  .sidebar-video-item-username {
+    font-size: 11px;
+    // color: #858789;
+    padding: 3px;
+  }
+  .sidebar-video-item-username:link {
+    color: #858789;
+    text-decoration: none;
+  }
+  .sidebar-video-item-username:visited {
+    color: #858789;
+    text-decoration: none;
+  }
+  .sidebar-video-item-username:hover {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
+  .sidebar-video-item-username:active {
+    color: #1b5dc6;
+    text-decoration: none;
+  }
+
+  .sidebar-video-item-views {
+    font-size: 11px;
+    color: #858789;
+    padding: 3px;
+  }
+}

@@ -16,23 +16,26 @@ class SidebarVideoItem extends React.Component {
       <div className="sidebar-video-item">
         {/* title */}
         <Link to={path}>
-          <img className="sidebar-video-item-thumbnail" src={video.thumbnail_url} height={110} width={195}/>
+          <img className="sidebar-video-item-thumbnail"
+            src={video.thumbnail_url} height={110} width={195}/>
         </Link>
 
         {/* details */}
         <div className="sidebar-video-item-details">
           {/* title */}
-          <div className="sidebar-video-item-title">
-            <Link to={path}>{video.title}</Link>
+          <div>
+            <Link className="sidebar-video-item-title"
+              to={path}>{video.title}</Link>
           </div>
           {/* username */}
           {/* No user page right now. Link to Home */}
-          <div className="sidebar-video-item-username">
-            <Link to='/'>{video.user.username}</Link>
+          <div>
+            <Link className="sidebar-video-item-username"
+              to='/'>{video.user.username}</Link>
           </div>
           {/* views and timeago */}
           <div className="sidebar-video-item-views">
-            {video.views} views
+            {video.views.toLocaleString()} views
           </div>
         </div>
       </div>

@@ -36,6 +36,10 @@ class VideoShow extends React.Component {
     ));
   }
 
+  getViewCount(views) {
+
+  }
+
   render() {
       const { video } = this.props;
       if (!video) return null;
@@ -57,7 +61,8 @@ class VideoShow extends React.Component {
                 <img className="video-avatar" src={video.user.avatar_url}/>
                 <div className="video-username">{video.user.username}</div>
               </div>
-              <div className="video-views">{video.views} views</div>
+              <div className="video-views">
+                {video.views.toLocaleString()} views</div>
             </div>
 
             <div className="video-detail-container">
