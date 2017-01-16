@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import SidebarVideoItem from '../sidebar_video_item';
 import VideoBar from '../video_bar/video_bar';
-import CommentsContainer from './comments/comments_container';
+import CommentsContainer from '../../comments/comments_container';
 import { shuffleVideos } from '../../../util/api_util_functions';
 
 class VideoShow extends React.Component {
@@ -34,10 +34,6 @@ class VideoShow extends React.Component {
         <SidebarVideoItem video={video}/>
       </div>
     ));
-  }
-
-  getViewCount(views) {
-
   }
 
   render() {

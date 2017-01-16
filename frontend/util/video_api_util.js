@@ -1,7 +1,16 @@
+export const fetchSomeVideos = (query) => (
+  $.ajax({
+    method: "GET",
+    url: "/api/videos",
+    data: query
+  })
+);
+
 export const fetchAllVideos = () => (
   $.ajax({
     method: "GET",
-    url: "/api/videos"
+    url: "/api/videos",
+    data: {query: "%"},
   })
 );
 

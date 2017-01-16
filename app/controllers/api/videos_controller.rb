@@ -1,7 +1,7 @@
 class Api::VideosController < ApplicationController
 
   def index
-    @videos = Video.all
+    @videos = Video.getFilteredVideos(params)
   end
 
   def create

@@ -1,0 +1,9 @@
+.searchbar-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .searchbar-container {
+    display: flex;
+    position: relative;
+  }
+}

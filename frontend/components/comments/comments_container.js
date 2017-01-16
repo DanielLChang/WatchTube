@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { createComment,
   updateComment,
-  deleteComment } from '../../../../actions/comment_actions';
+  deleteComment } from '../../actions/comment_actions';
 import Comments from './comments';
 
 const mapStateToProps = ({ session, videos }, ownProps) => ({

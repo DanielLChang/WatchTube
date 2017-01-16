@@ -2,14 +2,20 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const SearchBar = () => (
-  <div className="searchbar-nav">
-      <input
-        className="search-input-text"
-        type="text"
-        placeholder="Search"/>
+  <nav className="searchbar-nav">
+    <div className="searchbar-container">
+      <label>
+        <input
+          className="search-input-text"
+          type="text"
+          placeholder="Search"/>
+      </label>
+      <i className="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <ul className="search-videos">
 
-    <i className="fa fa-search" aria-hidden="true"></i>
-  </div>
+    </ul>
+  </nav>
 );
 
 export default SearchBar;

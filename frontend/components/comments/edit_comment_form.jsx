@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { timeAgo } from '../../../../util/api_util_functions';
+import { timeAgo } from '../../util/api_util_functions';
 
 class EditCommentForm extends React.Component {
   constructor(props){
