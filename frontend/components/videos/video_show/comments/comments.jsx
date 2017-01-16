@@ -16,13 +16,11 @@ class Comments extends React.Component {
 
     // debugger;
 
-    // comments.sort((first, second) => {
-    //   if (first.updated_at > second.update_at) {
-    //     return -1;
-    //   } else if (first.updated_at === second.updated_at) {
-    //     return 0;
-    //   } else return 1;
-    // });
+    comments.sort((first, second) => {
+      if (first.updated_at > second.update_at) return -1;
+      if (first.updated_at < second.updated_at) return 1;
+      return 0;
+    });
 
     return comments.map((comment) => (
       <CommentItem key={ comment.id }
