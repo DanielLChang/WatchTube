@@ -5,8 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-avatarPath = "#{Rails.root}/app/assets/images/avatars/";
-icons = Dir.entries(avatarPath).select{|file| file[/.*\.png/]}
+avatars = [
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526130/pikachu-2_vtuazo.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526129/psyduck_lyixxp.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526129/zubat_pefjjw.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526128/weedle_msivmv.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526128/squirtle_io3i0q.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526128/mew_p8zhg8.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526127/venonat_uakeok.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526127/pidgey_bo99pg.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526127/snorlax_qplvf2.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526126/mankey_arecpj.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526126/rattata_uxlw3x.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526125/meowth_wt2vuo.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526125/jigglypuff_kyhdsk.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526125/eevee_fwnd5c.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526124/dratini_v8effv.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526124/bellsprout_jj7hkf.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526123/caterpie_v0hlgw.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526123/bullbasaur_ofwn8u.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526122/charmander_whyy08.png',
+  'http://res.cloudinary.com/danielcloud/image/upload/v1484526122/abra_gmtn6u.png'
+]
 
 User.destroy_all
 users = []
@@ -15,7 +35,7 @@ users.push(User.create!({
   username: "Demo",
   email: "demo@gmail.com",
   password: "password",
-  avatar: File.new(avatarPath + icons.sample)
+  avatar_url: 'http://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png'
 }))
 
 50.times do
@@ -26,7 +46,7 @@ users.push(User.create!({
       username: username,
       email: Faker::Internet.email(username),
       password: "password",
-      avatar: File.new(avatarPath + icons.sample)
+      avatar_url: avatars.sample
   })
 
   users.push(user) if user
