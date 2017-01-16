@@ -63,10 +63,10 @@ class EditCommentForm extends React.Component {
 
           <div className="button-container group editor-buttons">
             <div className="edit-comment-buttons">
-              <button className="cancel-button"
-                onClick={ this.handleCancel }>Cancel</button>
               <button className="submit-button"
                 onClick={ this.handleSubmit }>Save</button>
+              <button className="cancel-button"
+                onClick={ this.handleCancel }>Cancel</button>
             </div>
           </div>
         </form>
