@@ -11,6 +11,7 @@
   }
   .comment-creator {
     padding-bottom: 2%;
+    height: 100px;
     .comment-form {
       display: flex;
       padding-bottom: 10px;
@@ -22,7 +23,33 @@
       }
       .comment-form-text {
         padding-left: 5px;
+        width: 100%;
       }
+    }
+    .submit-button {
+      float: right;
+      cursor: pointer;
+      border: 1px solid #054dc1;
+      border-radius: 3px;
+      color: #fff;
+      height: 25px;
+      width: 67px;
+      background-color: #4076F6;
+      font-size: 11px;
+    }
+    .submit-button:hover {
+      float: right;
+      cursor: pointer;
+      border: 1px solid #054dc1;
+      border-radius: 3px;
+      color: #fff;
+      height: 25px;
+      width: 67px;
+      background-color: #2F54D2;
+      font-size: 11px;
+    }
+    .submit-button:disabled {
+      background-color: #4975bc;
     }
   }
   .comment-items-container {
