@@ -88,7 +88,7 @@ class SearchBar extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     let { value } = this.state;
-    // value = encodeURI(value);
+    value = encodeURI(value);
 
     // reset search
     this.setState({ value: "" });
@@ -131,16 +131,17 @@ class SearchBar extends React.Component {
 
     return (
       <form className="searchbar-container" onSubmit={this.handleSubmit}>
-        <Autosuggest
-          className="searchbar-input"
-          suggestions={suggestions}
-          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-          onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-          getSuggestionValue={this.getSuggestionValue}
-          shouldRenderSuggestions={this.shouldRenderSuggestions}
-          renderSuggestion={this.renderSuggestion}
-          onSuggestionSelected={this.handleSubmit}
-          inputProps={inputProps} />
+        <div className="searchbar-input">
+          <Autosuggest
+            suggestions={suggestions}
+            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+            getSuggestionValue={this.getSuggestionValue}
+            shouldRenderSuggestions={this.shouldRenderSuggestions}
+            renderSuggestion={this.renderSuggestion}
+            onSuggestionSelected={this.handleSubmit}
+            inputProps={inputProps} />
+        </div>
 
         <button className="searchbar-submit" type="submit">
           <i className="fa fa-search" aria-hidden="true"></i>
