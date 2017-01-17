@@ -6,7 +6,6 @@ import LeftNav from './header/left_nav';
 import SearchBarContainer from './search/search_bar_container';
 import RightNavContainer from './header/right_nav_container';
 import VideoIndex from './videos/video_index/video_index';
-import ReactPlayer from 'react-player';
 
 class App extends React.Component {
   constructor(props) {

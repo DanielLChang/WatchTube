@@ -1,9 +1,10 @@
 .app-body {
   height: auto;
   min-height: 1500px;
-  display: block;
+  display: flex;
   box-sizing: border-box;
   background-color: #c6d8f4;
+  justify-content: center;
 }
 
 // .middle {
