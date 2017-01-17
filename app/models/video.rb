@@ -11,25 +11,26 @@ class Video < ApplicationRecord
   belongs_to :user
   has_many :comments
 
-  def self.getFilteredVideos(search)
-    sort_dir = search[:dir] ? search[:dir] : "asc"
+  def self.search_videos(search)
+
     if search[:query]
-      search_strings = search[:query].split(" ").map { |string| "%#{string}%" }
+
+      search_strings = search[:query].split(" ").map do |string|
+        "%#{string}%"
+      end
       where_string = ""
       search_string_array = []
 
-      while !search_strings.empty?
-        where_string = where_string + " OR " if !where_string.empty?
+      until search_strings.empty?
+        where_string = where_string + " OR " unless where_string.empty?
         string = search_strings.pop
         where_string = where_string + "UPPER(title) LIKE UPPER(?) OR UPPER(description) LIKE UPPER(?)"
         search_string_array << string
         search_string_array << string
       end
 
-      query = Video.where(where_string, *search_string_array).includes(:user)
+      query = Video.where(where_string, *search_string_array)
 
-    elsif search[:sort]
-      query = Video.all.includes(:user).order(search[:sort] => sort_dir)
     else
       query = Video.all
     end

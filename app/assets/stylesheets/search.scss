@@ -1,9 +1,9 @@
-.searchbar-nav {
-  display: flex;
-  flex-direction: column;
+.searchbar-container {
   position: relative;
-  .searchbar-container {
+  .searchbar-input {
     display: flex;
-    position: relative;
+  }
+  .searchbar-submit {
+    display: flex;
   }
 }

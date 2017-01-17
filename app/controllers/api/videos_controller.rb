@@ -1,7 +1,7 @@
 class Api::VideosController < ApplicationController
 
   def index
-    @videos = Video.getFilteredVideos(params)
+    @videos = Video.search_videos(params)
   end
 
   def create
@@ -43,17 +43,6 @@ class Api::VideosController < ApplicationController
     else
       render json: @video.errors.full_messages, status: 422
     end
-  end
-
-  def search
-    # debugger
-    if params[:query].present?
-      @videos = Video.where("title ~ ?", params[:query])
-    else
-      @videos = Video.none
-    end
-
-    render :search
   end
 
   def destroy

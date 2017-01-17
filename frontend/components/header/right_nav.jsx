@@ -14,12 +14,28 @@ class RightNav extends React.Component {
 
     this.greet = this.greet.bind(this);
     this.links = this.links.bind(this);
+    this._ifCurrentUser = this._ifCurrentUser.bind(this);
+  }
+
+  _ifCurrentUser(currentUser) {
+    let content;
+    if (currentUser.avatar_url) {
+      content =
+        <img className="current-user-avatar"
+          src={currentUser.avatar_url}/>;
+    } else {
+      content =
+        <img className="current-user-avatar"
+          src={currentUser.user.avatar_url}/>;
+    }
+    return content;
   }
 
   greet(currentUser, logout) {
+    // debugger;
     return (
       <div className="right-nav">
-        <img className="current-user-avatar" src={currentUser.avatar_url}/>
+        {this._ifCurrentUser(currentUser)}
         <button className="right-nav-button" onClick={ logout }>Log Out</button>
       </div>
     );

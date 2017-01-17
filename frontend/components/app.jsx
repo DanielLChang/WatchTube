@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import Footer from './footer/footer';
 import LeftNav from './header/left_nav';
-import SearchBar from './search/search_bar';
+import SearchBarContainer from './search/search_bar_container';
 import RightNavContainer from './header/right_nav_container';
 import VideoIndex from './videos/video_index/video_index';
 import ReactPlayer from 'react-player';
@@ -20,7 +20,7 @@ class App extends React.Component {
       <div className="app-page">
         <header className="app-header">
           <LeftNav/>
-          {/*<SearchBar/>*/}
+          <SearchBarContainer/>
           <RightNavContainer/>
         </header>
 
