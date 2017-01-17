@@ -1,8 +1,8 @@
-export const fetchSomeVideos = (query) => (
+export const searchVideos = (queryVal) => (
   $.ajax({
     method: "GET",
     url: "/api/videos",
-    data: query
+    data: queryVal
   })
 );
 
@@ -25,9 +25,6 @@ export const createVideo = (video) => (
   $.ajax({
     method: "POST",
     url: "/api/videos",
-    dataType: 'json',
-    contentType: false,
-    processData: false,
     data: video
   })
 );
@@ -36,8 +33,6 @@ export const updateVideo = (video) => (
   $.ajax({
     method: "PATCH",
     url: `/api/videos/${video.id}`,
-    contentType: false,
-    processData: false,
     data: video
   })
 );

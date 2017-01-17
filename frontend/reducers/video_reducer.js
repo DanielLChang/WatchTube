@@ -1,4 +1,4 @@
-import { RECEIVE_VIDEOS, RECEIVE_VIDEO } from '../actions/video_actions';
+import { RECEIVE_VIDEOS, RECEIVE_VIDEO, RECEIVE_SOME_VIDEOS } from '../actions/video_actions';
 import { RECEIVE_COMMENT, REMOVE_COMMENT } from '../actions/comment_actions';
 import { RECEIVE_ERRORS, CLEAR_ERRORS } from '../actions/util_actions';
 
@@ -20,6 +20,9 @@ const VideoReducer = (state = _nullState, action) => {
   }
 
   switch (action.type) {
+    case RECEIVE_SOME_VIDEOS:
+      newState.searched_videos = action.videos.list_videos;
+    return newState;
     case RECEIVE_VIDEOS:
       newState.list_videos = action.videos.list_videos;
       // const listVideos = action.videos.list_videos;

@@ -45,6 +45,17 @@ class Api::VideosController < ApplicationController
     end
   end
 
+  def search
+    # debugger
+    if params[:query].present?
+      @videos = Video.where("title ~ ?", params[:query])
+    else
+      @videos = Video.none
+    end
+
+    render :search
+  end
+
   def destroy
     @video = Video.find(params[:id])
     @video.destroy

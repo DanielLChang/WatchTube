@@ -1,6 +1,20 @@
 import React from 'react';
 import VideoItem from '../components/videos/video_item';
 
+export const uniqueWords = (words) => {
+  const found = {};
+  const result = [];
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i].toLowerCase();
+
+    if(!found.hasOwnProperty(word)){
+      found[word] = 1;
+      result.push(words[i]);
+    }
+  }
+  return result;
+};
+
 export const getCommentIndex = (comments, comment) => {
   return comments.findIndex((cmt) => {
     return (cmt.id === comment.id) ? true : false;
