@@ -10,11 +10,15 @@ class Comments extends React.Component {
   }
 
   fetchComments() {
-    const { currentUser, updateComment, deleteComment } = this.props;
-    let { comments } = this.props;
+    const { updateComment, deleteComment } = this.props;
+    let { comments, currentUser } = this.props;
     if (!comments) comments = [];
 
-    // debugger;
+    if (currentUser) {
+      if (!currentUser.avatar_url) {
+        currentUser = currentUser.user;
+      }
+    }
 
     comments.sort((first, second) => {
       if (first.updated_at > second.update_at) return -1;
