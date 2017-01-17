@@ -27,7 +27,7 @@ export const receiveErrors = (errors) => ({
 });
 
 export const getSomeVideos = (query) => (dispatch) => (
-  VideoAPIUtil.fetchSomeVideos(query).then(
+  VideoAPIUtil.searchVideos(query).then(
     (videos) => dispatch(receiveSomeVideos(videos)),
       (err) => dispatch(receiveErrors(err.responseJSON))
   )

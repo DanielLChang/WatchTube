@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { getSomeVideos } from '../actions/video_actions';
 
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
@@ -24,13 +25,13 @@ const Root = ({ store }) => {
     }
   };
 
-  // const _fetchSearchedVideos = (prevState, nextState) => {
-  //   let state = nextState;
-  //   if (typeof state === 'function') state = prevState;
-  //
-  //   let query = state.location.query;
-  //   store.dispatch(searchVideos(query))
-  // };
+  const _fetchSearchedVideos = (prevState, nextState) => {
+    let state = nextState;
+    if (typeof state === 'function') state = prevState;
+
+    let query = state.location.query;
+    store.dispatch(getSomeVideos(query));
+  };
 
   return (
     <Provider store={ store }>
@@ -46,7 +47,9 @@ const Root = ({ store }) => {
           <Router path="videos/:id"
             component={ VideoShowContainer }/>
           <Router path="search"
-            component={ SearchIndexContainer }/>
+            component={ SearchIndexContainer }
+            onEnter={ _fetchSearchedVideos }
+            onChange={ _fetchSearchedVideos }/>
         </Route>
       </Router>
     </Provider>
