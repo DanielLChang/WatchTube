@@ -92,4 +92,7 @@ export const timeAgo = (createdDate) => {
     return time + ' minutes';
   }
 
+  time = seconds;
+  return time + ' seconds';
+
 };
