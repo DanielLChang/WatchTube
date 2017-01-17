@@ -35,8 +35,10 @@ class Comments extends React.Component {
     const { videoId, comments, createComment } = this.props;
     let { currentUser } = this.props;
 
-    if(!currentUser.avatar_url) {
-      currentUser = currentUser.user;
+    if (currentUser) {
+      if (!currentUser.avatar_url) {
+        currentUser = currentUser.user;
+      }
     }
 
     let numComments = "No comments to display";
