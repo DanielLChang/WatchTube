@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { getSomeVideos } from '../actions/video_actions';
+import { clearErrors } from '../actions/util_actions';
 
 import App from './app';
 import HomePageContainer from './home_page/home_page_container';
@@ -11,6 +12,10 @@ import VideoShowContainer from './videos/video_show/video_show_container';
 import SearchIndexContainer from './search/search_index_container';
 
 const Root = ({ store }) => {
+
+  const _clearErrors = () => {
+    store.dispatch(clearErrors());
+  };
 
   const _ensureLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
@@ -41,10 +46,12 @@ const Root = ({ store }) => {
           <IndexRoute component={ HomePageContainer }/>
           <Router path="/signup"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }/>
+            onEnter={ _redirectIfLoggedIn }
+            onLeave={ _clearErrors }/>
           <Router path="/login"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }/>
+            onEnter={ _redirectIfLoggedIn }
+            onLeave={ _clearErrors }/>
           <Router path="videos"
             component={ VideoIndexContainer }/>
           <Router path="videos/:id"
