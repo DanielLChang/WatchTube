@@ -17,12 +17,13 @@ video {
     margin-right: 3%;
     .video-player {
       margin-bottom: 2%;
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     }
     .video-title-container {
       padding: 3% 2%;
       background-color: $color3;
       border-radius: 1px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
       margin-bottom: 2%;
       .video-title {
         font-size: 20px;
@@ -34,7 +35,7 @@ video {
         .video-avatar {
           height: 50px;
           background-color: white;
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
         }
       }
       .video-username {
@@ -51,7 +52,7 @@ video {
       padding: 3% 2%;
       background-color: $color3;
       border-radius: 1px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
       height: 70px;
       margin-bottom: 2%;
       .video-date {
@@ -72,7 +73,7 @@ video {
     background-color: $color3;
     padding: 2%;
     border-radius: 1px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     height: 1000px;
     .video-sidebar-title {
       font-weight: 500;

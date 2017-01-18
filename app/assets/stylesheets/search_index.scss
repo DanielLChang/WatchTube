@@ -1,14 +1,17 @@
+@import 'palette';
+
 .search-video-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 1px #aaa;
+  background-color: $color3;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
   width: 700px;
   padding: 15px;
   height: 100%;
   margin: 50px;
+  border-radius: 5px;
   .search-index-details {
     display: flex;
     justify-content: flex-end;
