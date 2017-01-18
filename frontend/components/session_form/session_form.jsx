@@ -4,13 +4,13 @@ import request from 'superagent';
 import { Link, withRouter } from 'react-router';
 
 const CLOUDINARY_UPLOAD_PRESET = 'mimznvzb';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/danielcloud/upload';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/danielcloud/image/upload';
 
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      uploadedFileCloudinaryUrl: '',
+      avatar_url: 'https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png',
       email: "",
       username: "",
       password: ""
@@ -20,12 +20,11 @@ class SessionForm extends React.Component {
     this.renderAvatar = this.renderAvatar.bind(this);
     this.renderEmail = this.renderEmail.bind(this);
     this.renderDemo = this.renderDemo.bind(this);
+    this.onImageDrop = this.onImageDrop.bind(this);
+    this.handleImageUpload = this.handleImageUpload.bind(this);
   }
 
   onImageDrop(files) {
-    this.setState({
-      uploadedFile: files[0]
-    });
     this.handleImageUpload(files[0]);
   }
 
@@ -41,7 +40,7 @@ class SessionForm extends React.Component {
 
       if (response.body.secure_url !== '') {
         this.setState({
-          uploadedFileCloudinaryUrl: response.body.secure_url
+          avatar_url: response.body.secure_url
         });
       }
     });
@@ -63,20 +62,23 @@ class SessionForm extends React.Component {
         <div>
           <div className="file-upload">
             <Dropzone
+              className="dropzone-upload"
               multiple={ false }
               accept="image/*"
               onDrop={this.onImageDrop.bind(this)}>
-              <p>Drop an image or click to select a file to upload.</p>
+              <div>
+                {this.state.avatar_url === '' ?
+                  <div>
+                    <img src={'https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png'} width={50} height={50}/>
+                  </div>
+                  :
+                  <div>
+                    <img src={this.state.avatar_url} width={50} height={50}/>
+                  </div>}
+                </div>
             </Dropzone>
           </div>
 
-          <div>
-            {this.state.uploadedFileCloudinaryUrl === '' ? null :
-            <div>
-              <p>{this.state.uploadedFile.name}</p>
-              <img src={this.state.uploadedFileCloudinaryUrl} />
-            </div>}
-          </div>
         </div>
       );
     } else return null;

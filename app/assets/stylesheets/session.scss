@@ -14,7 +14,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    height: 500px;
+    height: 70%;
     width: 500px;
     .login-form-logo {
       padding-left: 25px;
@@ -31,6 +31,26 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    .dropzone-upload {
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #666666;
+      border-style: dashed;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-top: 20px;
+      p {
+        font-size: 13px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
     .login-input {
       width: 100%;
       // padding: 1%;
