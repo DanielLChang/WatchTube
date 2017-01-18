@@ -53,8 +53,10 @@ class HomePage extends React.Component {
         <div className="banner">
           <div className="banner-picture"></div>
           <h1>DIVE IN</h1>
-          <h2>Start Watching.</h2>
-          <Link to="/videos">More Videos</Link>
+          <h2>Start Watching</h2>
+          <Link to="/videos">
+              <input className="banner-link" type="submit" value="More Videos" />
+          </Link>
         </div>
 
         <VideoBar
@@ -64,7 +66,7 @@ class HomePage extends React.Component {
         <VideoBar
           videos={ this.props.row2 }
           count={ count }
-          title="Trending"/>
+          title="Discover"/>
       </div>
     );
   }

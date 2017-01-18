@@ -53,6 +53,22 @@
     }
     a {
       z-index: 1000;
+      .banner-link {
+        cursor: pointer;
+        border: 1px solid #36311F;
+        border-radius: 3px;
+        color: #36311F;
+        height: 50px;
+        width: 150px;
+        background-color: #d8d7d6;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0;
+      }
+      .banner-link:hover {
+        color: #fefdff;
+        background-color: #e55d02;
+      }
     }
   }
 }
