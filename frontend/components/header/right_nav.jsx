@@ -36,6 +36,11 @@ class RightNav extends React.Component {
     return (
       <div className="right-nav">
         {this._ifCurrentUser(currentUser)}
+
+        <Link to="/upload">
+          <i className="fa fa-upload" aria-hidden="true"></i>
+        </Link>
+        
         <button className="right-nav-button" onClick={ logout }>Log Out</button>
       </div>
     );

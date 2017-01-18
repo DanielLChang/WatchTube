@@ -10,6 +10,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import VideoIndexContainer from './videos/video_index/video_index_container';
 import VideoShowContainer from './videos/video_show/video_show_container';
 import SearchIndexContainer from './search/search_index_container';
+import VideoFormContainer from './videos/video_form/video_form_container';
 
 const Root = ({ store }) => {
 
@@ -58,6 +59,9 @@ const Root = ({ store }) => {
             component={ SearchIndexContainer }
             onEnter={ _fetchSearchedVideos }
             onChange={ _fetchSearchedVideos }/>
+          <Router path="/upload"
+            component={ VideoFormContainer }
+            onEnter={ _ensureLoggedIn }/>
         </Route>
       </Router>
     </Provider>

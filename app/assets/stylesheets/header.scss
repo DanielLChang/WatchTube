@@ -91,6 +91,15 @@
   padding: 10px 0 10px 0;
   justify-content: center;
   align-items: center;
+  .fa-upload {
+    font-size: 25px;
+    color: #d8d7d6;
+    padding-right: 15px;
+  }
+  .fa-upload:hover {
+    cursor: pointer;
+    color: #36311F;
+  }
   .current-user-avatar {
     height: 50px;
     padding-right: 10px;
