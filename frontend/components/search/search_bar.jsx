@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import Autosuggest from 'react-autosuggest';
 import { uniqueWords } from '../../util/api_util_functions';
+import merge from 'lodash/merge';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -101,10 +102,9 @@ class SearchBar extends React.Component {
 
   // from react-autosuggest
   onChange(event, { newValue, method }) {
-    // debugger;
-    this.setState({
-      value: newValue
-    });
+    let newState = merge({}, this.state);
+    newState.value = newValue;
+    this.state = merge({}, newState);
   }
 
   // from react-autosuggest

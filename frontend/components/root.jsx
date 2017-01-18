@@ -46,12 +46,10 @@ const Root = ({ store }) => {
           <IndexRoute component={ HomePageContainer }/>
           <Router path="/signup"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }
-            onLeave={ _clearErrors }/>
+            onEnter={ _redirectIfLoggedIn }/>
           <Router path="/login"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }
-            onLeave={ _clearErrors }/>
+            onEnter={ _redirectIfLoggedIn }/>
           <Router path="videos"
             component={ VideoIndexContainer }/>
           <Router path="videos/:id"
