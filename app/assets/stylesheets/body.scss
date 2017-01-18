@@ -1,9 +1,11 @@
+@import 'palette';
+
 .app-body {
   min-height: 1000px;
   height: 100%;
   display: flex;
   box-sizing: border-box;
-  background-color: #445166;
+  background-color: #ff9b42;
   justify-content: center;
 }
 

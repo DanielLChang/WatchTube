@@ -1,3 +1,5 @@
+@import 'palette';
+
 .video-index {
   margin: 0 auto;
   padding: 20px;
@@ -7,7 +9,7 @@
 
 .carousel-container {
   height: 200px;
-  background-color: #fff;
+  background-color: $color3;
   box-shadow: 0 0 1px #aaa;
   padding: 20px;
   border-radius: 5px;

@@ -1,3 +1,5 @@
+@import 'palette';
+
 .login-form-container {
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@
     align-items: center;
     padding: 5%;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background-color: $color3;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding-left: 50px;
@@ -75,23 +77,26 @@
       color: #e5302d;
     }
     .login-button {
-      border: 1px solid #054dc1;
+      cursor: pointer;
+      border: 1px solid #36311F;
       border-radius: 3px;
-      color: #fff;
+      color: #36311F;
       height: 45px;
       width: 285px;
-      background-color: #498bf4;
+      background-color: #d8d7d6;
       margin-bottom: 0;
       font-size: 14px;
+      font-weight: bold;
     }
     .login-button:hover {
-      border: 1px solid #054dc1;
+      border: 1px solid #36311F;
       border-radius: 3px;
-      color: #fff;
+      color: #fefdff;
       height: 45px;
       width: 285px;
-      background-color: #3474db;
+      background-color: #e55d02;
       margin-bottom: 0;
+      font-weight: bold;
     }
   }
 }

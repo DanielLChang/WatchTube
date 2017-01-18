@@ -1,7 +1,9 @@
+@import 'palette';
+
 .home-page {
   min-height: 1000px;
   height: 100%;
-  background-color: #445166;
+  background-color: #ff9b42;
   justify-content: center;
   .banner {
     display: flex;
@@ -25,7 +27,7 @@
       z-index: 1000;
       display: flex;
       font-size: 60px;
-      color: #f9f9f9;
+      color: $color3;
       font-weight: bolder;
       text-shadow:
       -1px -1px 0 #000,
@@ -39,7 +41,7 @@
       z-index: 1000;
       display: flex;
       font-size: 50px;
-      color: #f9f9f9;
+      color: $color3;
       font-weight: bolder;
       text-shadow:
       -1px -1px 0 #000,

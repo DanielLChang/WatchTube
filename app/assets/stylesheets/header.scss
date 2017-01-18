@@ -1,3 +1,5 @@
+@import 'palette';
+
 * {
   font-family: sans-serif;
 }
@@ -16,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
-  background-color: #fcfdff;
+  background-color: $color2;
 }
 
 .left-nav {
@@ -96,25 +98,27 @@
   }
   .right-nav-button {
     cursor: pointer;
-    border: 1px solid #054dc1;
+    border: 1px solid #36311F;
     border-radius: 3px;
-    color: #fff;
+    color: #36311F;
     height: 30px;
     width: 72px;
-    background-color: #3974d3;
+    background-color: #d8d7d6;
     font-size: 12px;
+    font-weight: bold;
     margin-right: 10px;
     padding: 0;
   }
   .right-nav-button:hover {
     cursor: pointer;
-    border: 1px solid #054dc1;
+    border: 1px solid #36311F;
     border-radius: 3px;
-    color: #fff;
+    color: #fefdff;
     height: 30px;
     width: 72px;
-    background-color: #154187;
+    background-color: #444140;
     font-size: 12px;
+    font-weight: bold;
     margin-right: 10px;
     padding: 0;
   }
