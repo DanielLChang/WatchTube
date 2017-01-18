@@ -100,7 +100,8 @@ class SearchBar extends React.Component {
   }
 
   // from react-autosuggest
-  onChange(event, { newValue }) {
+  onChange(event, { newValue, method }) {
+    // debugger;
     this.setState({
       value: newValue
     });
@@ -121,8 +122,8 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    const { value, suggestions } = this.state;
-    const inputProps = {
+    let { value, suggestions } = this.state;
+    let inputProps = {
       value,
       onChange: this.onChange,
       placeholder: "Search"
@@ -141,6 +142,7 @@ class SearchBar extends React.Component {
             shouldRenderSuggestions={this.shouldRenderSuggestions}
             renderSuggestion={this.renderSuggestion}
             onSuggestionSelected={this.handleSubmit}
+            focusInputOnSuggestionClick={true}
             inputProps={inputProps} />
         </div>
 

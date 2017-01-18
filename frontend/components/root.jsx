@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { getSomeVideos } from '../actions/video_actions';
 
 import App from './app';
+import HomePageContainer from './home_page/home_page_container';
 import SessionFormContainer from './session_form/session_form_container';
 import VideoIndexContainer from './videos/video_index/video_index_container';
 import VideoShowContainer from './videos/video_show/video_show_container';
@@ -37,13 +38,15 @@ const Root = ({ store }) => {
     <Provider store={ store }>
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
-          <IndexRoute component={ VideoIndexContainer }/>
+          <IndexRoute component={ HomePageContainer }/>
           <Router path="/signup"
             component={ SessionFormContainer }
             onEnter={ _redirectIfLoggedIn }/>
           <Router path="/login"
             component={ SessionFormContainer }
             onEnter={ _redirectIfLoggedIn }/>
+          <Router path="videos"
+            component={ VideoIndexContainer }/>
           <Router path="videos/:id"
             component={ VideoShowContainer }/>
           <Router path="search"

@@ -1,0 +1,56 @@
+.home-page {
+  min-height: 1000px;
+  height: 100%;
+  background-color: #445166;
+  justify-content: center;
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 505px;
+    top: 90px;
+    margin: 20px 0;
+    flex-direction: column;
+    .banner-picture {
+      position: absolute;
+      background-image: url(https://res.cloudinary.com/danielcloud/image/upload/c_scale,h_500,w_900/v1484717575/t20pc32vbru-thomas-kelley_dgeib7.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: .8;
+      width: 100%;
+      height: 500px;
+    }
+    h1 {
+      z-index: 1000;
+      display: flex;
+      font-size: 60px;
+      color: #f9f9f9;
+      font-weight: bolder;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      margin-bottom: 35px;
+      letter-spacing: 3px;
+    }
+    h2 {
+      z-index: 1000;
+      display: flex;
+      font-size: 50px;
+      color: #f9f9f9;
+      font-weight: bolder;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      margin-bottom: 35px;
+      letter-spacing: 3px;
+    }
+    a {
+      z-index: 1000;
+    }
+  }
+}
