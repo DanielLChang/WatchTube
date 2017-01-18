@@ -124,7 +124,8 @@ class SearchBar extends React.Component {
     const { value, suggestions } = this.state;
     const inputProps = {
       value,
-      onChange: this.onChange
+      onChange: this.onChange,
+      placeholder: "Search"
     };
 
     // debugger;
