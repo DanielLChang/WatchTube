@@ -29,7 +29,6 @@ class VideoForm extends React.Component {
   }
 
   onImageDrop(files) {
-
     this.handleImageUpload(files[0]);
   }
 

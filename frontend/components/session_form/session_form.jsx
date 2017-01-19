@@ -24,12 +24,9 @@ class SessionForm extends React.Component {
     this.handleImageUpload = this.handleImageUpload.bind(this);
   }
 
-  componentDidMount() {
-    $(".loading-animation").hide();
-  }
-
   onImageDrop(files) {
     $(".dropzone-upload img").hide();
+    $(".loading-animation").show();
     this.handleImageUpload(files[0]);
   }
 
@@ -37,7 +34,6 @@ class SessionForm extends React.Component {
     let upload = request.post(CLOUDINARY_UPLOAD_URL)
                         .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
                         .field('file', file);
-    $(".loading-animation").show();
 
     upload.end((err, response) => {
       $(".loading-animation").hide();
@@ -78,11 +74,11 @@ class SessionForm extends React.Component {
                 {this.state.avatar_url === '' ?
                   <div>
                     <img className="default-avatar" src='https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png'></img>
-                    <img className="loading-animation" src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
+                    <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
                   </div>
                   :
                   <div>
-                    <img className="loading-animation" src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
+                    <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
                     <img className="new-avatar" src={this.state.avatar_url} width={50} height={50}></img>
                   </div>}
                 </div>
