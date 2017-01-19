@@ -25,6 +25,7 @@ video {
       border-radius: 5px;
       box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
       margin-bottom: 2%;
+      height: 115px;
       .video-title {
         font-size: 20px;
         font-weight: 500;
@@ -32,6 +33,8 @@ video {
       }
       .video-user-details {
         display: flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dedfe0;
         .video-avatar {
           height: 50px;
           background-color: white;
@@ -46,6 +49,7 @@ video {
       }
       .video-views {
         float: right;
+        padding-top: 10px;
       }
     }
     .video-detail-container {
@@ -74,14 +78,18 @@ video {
     padding: 2%;
     border-radius: 5px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
-    height: 1000px;
+    height: 995px;
     .video-sidebar-title {
       font-weight: 500;
-      padding-bottom: 5%;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #dedfe0;
     }
     .sidebar-video-item {
       display: flex;
-      padding-bottom: 5%;
+      margin-bottom: 3%;
+      width: 100%;
+      border-bottom: 1px solid #dedfe0;
       .sidebar-video-item-thumbnail {
         float: left;
         width: 170px;
