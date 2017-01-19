@@ -12,7 +12,6 @@ class Video < ApplicationRecord
   has_many :comments
 
   def self.search_videos(search)
-
     if search[:query]
 
       search_strings = search[:query].split(" ").map do |string|
@@ -29,7 +28,7 @@ class Video < ApplicationRecord
         search_string_array << string
       end
 
-      query = Video.where(where_string, *search_string_array)
+      query = Video.where(where_string, *search_string_array).where.not(title: "LITTY")
 
     else
       query = Video.all

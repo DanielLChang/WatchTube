@@ -50,7 +50,7 @@ class SearchIndex extends React.Component {
   render() {
     const { videos } = this.props;
 
-    let videoCount = "No results found";
+    let videoCount = 0;
     if (videos) {
       videoCount = videos.length;
     }

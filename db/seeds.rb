@@ -75,7 +75,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281481/Baby_I_Love_Your_Way_txja9i.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -86,7 +86,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/c_scale,h_360,w_640/v1484281367/Best_of_My_Love_vyjm9d.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281367/Best_of_My_Love_vyjm9d.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -97,7 +97,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281616/Can_We_Talk_rgdzrp.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281616/Can_We_Talk_rgdzrp.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -108,7 +108,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281449/Can_t_Take_My_Eyes_Off_You_fqowz1.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281449/Can_t_Take_My_Eyes_Off_You_fqowz1.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -119,7 +119,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281379/Easy_pm41xo.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281379/Easy_pm41xo.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -130,7 +130,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281723/I_ll_Be_There_sgv2vu.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281723/I_ll_Be_There_sgv2vu.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -141,7 +141,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281767/Me_and_Mrs._Jones_ad18xt.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281767/Me_and_Mrs._Jones_ad18xt.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -152,7 +152,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281855/One_More_Try_knjcoh.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281855/One_More_Try_knjcoh.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -163,7 +163,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281776/Reasons_jd4cz3.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281776/Reasons_jd4cz3.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -174,7 +174,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281843/Shining_Star_wlxetr.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484281843/Shining_Star_wlxetr.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -185,7 +185,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284022/SpellBound_fitwer.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284022/SpellBound_fitwer.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -196,7 +196,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283629/Jinky_Jenkins_Lucky_Lou_grfclp.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283629/Jinky_Jenkins_Lucky_Lou_grfclp.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -207,7 +207,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283914/Human_Week_fp1ljk.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283914/Human_Week_fp1ljk.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -218,7 +218,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283567/Wish_Upon_A_Coin_n7aond.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283567/Wish_Upon_A_Coin_n7aond.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -229,7 +229,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284376/The_Daily_Grind_oz0mpi.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284376/The_Daily_Grind_oz0mpi.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -240,7 +240,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284415/At_The_Opera_n2qzcv.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284415/At_The_Opera_n2qzcv.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -251,7 +251,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284340/Fugu_cewnju.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284340/Fugu_cewnju.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -262,7 +262,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284244/The_Waffle_nbbuu0.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284244/The_Waffle_nbbuu0.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -273,7 +273,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283986/The_Dangerous_Ones_vqviwb.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283986/The_Dangerous_Ones_vqviwb.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -284,7 +284,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283571/Fresh_Guacamole_d6bwfa.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283571/Fresh_Guacamole_d6bwfa.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -295,7 +295,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283907/Western_Spaghetti_wvj4cf.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283907/Western_Spaghetti_wvj4cf.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -306,7 +306,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283749/The_Cake_Is_A_Lie_tvjveh.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283749/The_Cake_Is_A_Lie_tvjveh.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -317,7 +317,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284327/Counterfeit_Pizza_qhgz7t.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284327/Counterfeit_Pizza_qhgz7t.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -328,7 +328,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283162/Submarine_Sandwich_tgmdhn.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283162/Submarine_Sandwich_tgmdhn.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -339,7 +339,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284300/Coinstar_zbylar.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284300/Coinstar_zbylar.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -350,7 +350,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283375/Pee-Nut_uvosag.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283375/Pee-Nut_uvosag.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -361,7 +361,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283970/KaBoom_zyncxr.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484283970/KaBoom_zyncxr.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -372,7 +372,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284328/The_Deep_d8fdze.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284328/The_Deep_d8fdze.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -383,7 +383,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284142/Black_Gold_dorbzq.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284142/Black_Gold_dorbzq.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -394,7 +394,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284408/Fireworks_kpfraq.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284408/Fireworks_kpfraq.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -405,7 +405,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284379/Moth_pq9ljf.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284379/Moth_pq9ljf.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -416,7 +416,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284402/Bacardi_Train_bvuvf1.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484284402/Bacardi_Train_bvuvf1.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -427,7 +427,7 @@ videos.push(
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484455768/LITTY_ayskj7.mp4",
     thumbnail_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484455768/LITTY_ayskj7.jpg",
     user_id: users.sample.id,
-    views: rand(10000000)
+    views: rand(1000000)
   })
 )
 
@@ -449,7 +449,7 @@ all_comments = [
   "ROFL",
   "THIS IS THE BEST VIDEO EVER!",
   "What am I doing here?",
-  "What are we all doing here?",
+  "What are we doing here?",
   "What is the answer to life",
   "42 is the answer to life",
   "I should read more books",
@@ -467,11 +467,20 @@ all_comments = [
   "When did this come out?",
   "YESSSSS!",
   "Better quality please.",
-  "I love this!"
+  "I love this!",
+  "More videos!!",
+  "Daniel Chang really needs a job..",
+  "LOL",
+  "Why did the chicken cross the road?",
+  "This video is hilarious",
+  "I miss this",
+  "First time here, definitely not my last",
+  "Made an account just to comment",
+  "This site is awesome!"
 ]
 
 comments = []
-100.times do
+200.times do
   comments.push(Comment.create({
     body: all_comments.sample,
     user_id: users.sample.id,
