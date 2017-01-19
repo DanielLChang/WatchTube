@@ -5,7 +5,6 @@ import VideoForm from './video_form';
 
 //ownProps for when need to update video
 const mapStateToProps = ({ session, videos }, ownProps) => {
-
   let currentUser;
   if (session.currentUser) {
     if (session.currentUser.success) {
@@ -14,9 +13,9 @@ const mapStateToProps = ({ session, videos }, ownProps) => {
   }
 
   let errors;
-  if (videos.forms.uploadVideo) {
-    errors = videos.forms.uploadVideo.errors;
-  } else errors = videos.forms.errors;
+  if (videos.errors.errors) {
+    errors = videos.errors.errors;
+  } else errors = videos.errors;
 
   return ({
     currentUser: currentUser,

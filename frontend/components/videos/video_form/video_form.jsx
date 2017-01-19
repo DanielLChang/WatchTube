@@ -11,6 +11,7 @@ class VideoForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      user: this.props.currentUser,
       user_id: this.props.currentUser.id,
       views: 0,
       title: "",
@@ -22,6 +23,13 @@ class VideoForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onImageDrop = this.onImageDrop.bind(this);
     this.handleImageUpload = this.handleImageUpload.bind(this);
+  }
+
+  componentDidUpdate() {
+    // debugger;
+    // if (!this.props.currentUser) {
+    //   this.props.router.push("/");
+    // }
   }
 
   onImageDrop(files) {
@@ -37,7 +45,6 @@ class VideoForm extends React.Component {
 
     upload.end((err, response) => {
       $(".loading-animation").hide();
-      // $(".new-thumbnail").show();
       if (err) {
         console.error(err);
       }
@@ -67,10 +74,6 @@ class VideoForm extends React.Component {
         ))}
       </ul>
     );
-  }
-
-  completeUpload() {
-
   }
 
   renderThumbnail() {
@@ -105,7 +108,6 @@ class VideoForm extends React.Component {
     e.preventDefault();
     const video = this.state;
     this.props.createVideo({ video });
-    // this.props.router.push("/");
   }
 
   update(field) {

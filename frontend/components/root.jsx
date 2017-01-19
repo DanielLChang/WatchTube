@@ -63,7 +63,8 @@ const Root = ({ store }) => {
             onChange={ _fetchSearchedVideos }/>
           <Router path="/upload"
             component={ VideoFormContainer }
-            onEnter={ _ensureLoggedIn }/>
+            onEnter={ _ensureLoggedIn }
+            onLeave={ _clearErrors }/>
         </Route>
       </Router>
     </Provider>

@@ -5,13 +5,9 @@ import { RECEIVE_ERRORS, CLEAR_ERRORS } from '../actions/util_actions';
 import merge from 'lodash/merge';
 import { getCommentIndex } from '../util/api_util_functions';
 
-const _nullForm = {
-  uploadVideo: { errors: [] }
-};
-
 const _nullState = {
   currentVideo: null,
-  forms: _nullForm
+  errors: []
 };
 
 const VideoReducer = (state = _nullState, action) => {
@@ -27,15 +23,12 @@ const VideoReducer = (state = _nullState, action) => {
   switch (action.type) {
     case RECEIVE_SOME_VIDEOS:
       newState.searched_videos = action.videos.list_videos;
-      newState.forms = _nullForm;
       return newState;
     case RECEIVE_VIDEOS:
       newState.list_videos = action.videos.list_videos;
-      newState.forms = _nullForm;
       return newState;
     case RECEIVE_VIDEO:
       newState.currentVideo = action.video;
-      newState.forms = _nullForm;
       return newState;
     case RECEIVE_COMMENT:
       if(idx !== -1) {
@@ -47,7 +40,10 @@ const VideoReducer = (state = _nullState, action) => {
       return newState;
     case RECEIVE_ERRORS:
       const errors = action.errors;
-      newState.forms = merge({}, _nullState, { errors });
+      newState.errors = merge({}, _nullState, { errors });
+      return newState;
+    case CLEAR_ERRORS:
+      newState.errors = _nullState.errors;
       return newState;
     default:
       return state;
