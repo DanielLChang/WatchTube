@@ -15,6 +15,7 @@ import VideoFormContainer from './videos/video_form/video_form_container';
 const Root = ({ store }) => {
 
   const _clearErrors = () => {
+    debugger;
     store.dispatch(clearErrors());
   };
 
@@ -47,10 +48,12 @@ const Root = ({ store }) => {
           <IndexRoute component={ HomePageContainer }/>
           <Router path="/signup"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }/>
+            onEnter={ _redirectIfLoggedIn }
+            onLeave={ _clearErrors }/>
           <Router path="/login"
             component={ SessionFormContainer }
-            onEnter={ _redirectIfLoggedIn }/>
+            onEnter={ _redirectIfLoggedIn }
+            onLeave={ _clearErrors }/>
           <Router path="videos"
             component={ VideoIndexContainer }/>
           <Router path="videos/:id"

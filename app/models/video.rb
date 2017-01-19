@@ -35,7 +35,7 @@ class Video < ApplicationRecord
       query = Video.all
     end
 
-    query = query.limit(search[:limit].to_i) if search[:limit]
+    # query = query.limit(search[:limit].to_i) if search[:limit]
 
     query
   end
