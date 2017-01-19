@@ -24,11 +24,8 @@ class VideoForm extends React.Component {
     this.handleImageUpload = this.handleImageUpload.bind(this);
   }
 
-  componentDidMount() {
-    $(".loading-animation").hide();
-  }
-
   onImageDrop(files) {
+    $(".loading-animation").show();
     this.handleImageUpload(files[0]);
   }
 
@@ -36,7 +33,6 @@ class VideoForm extends React.Component {
     let upload = request.post(CLOUDINARY_UPLOAD_URL)
                         .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
                         .field('file', file);
-    $(".loading-animation").show();
 
     upload.end((err, response) => {
       $(".loading-animation").hide();
@@ -72,7 +68,7 @@ class VideoForm extends React.Component {
     e.preventDefault();
     const video = this.state;
     this.props.createVideo({ video });
-    this.props.router.push("/");
+    // this.props.router.push("/");
   }
 
   update(field) {
@@ -92,9 +88,7 @@ class VideoForm extends React.Component {
               multiple={ false }
               accept="video/*"
               onDrop={this.onImageDrop.bind(this)}>
-              <div className="loading-animation">
-                <img src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
-              </div>
+              <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
             </Dropzone>
           </div>
 

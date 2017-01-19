@@ -1,5 +1,36 @@
-.dropzone-upload {
-  height: 100px;
-  width: 100px;
+.video-form-container {
+  display: flex;
+  height: 450px;
+  width: 1000px;
+  margin-top: 5%;
   border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+
+  .video-form-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .dropzone-upload {
+      height: 110px;
+      width: 200px;
+      border: 1px solid black;
+    }
+    .video-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .video-form-title {
+        height: 25px;
+        width: 475px;
+      }
+      .video-form-description {
+        width: 475px;
+        height: 75px;
+      }
+    }
+  }
 }
