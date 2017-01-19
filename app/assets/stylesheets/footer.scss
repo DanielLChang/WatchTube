@@ -6,16 +6,19 @@
   right: 0px;
   bottom: 0;
   left: 0;
-  height: 150px;
+  height: 90px;
+  justify-content: center;
   background-color: $color2;
   .left-footer-nav {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     padding: 0 3%;
     .github-logo {
       color: #d8d7d6;
       font-size: 60px;
+      margin-right: 20px;
     }
 
     .linkedin-logo {
