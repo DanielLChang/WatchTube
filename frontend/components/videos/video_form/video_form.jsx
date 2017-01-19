@@ -26,10 +26,9 @@ class VideoForm extends React.Component {
   }
 
   componentDidUpdate() {
-    // debugger;
-    // if (!this.props.currentUser) {
-    //   this.props.router.push("/");
-    // }
+    if (!this.props.currentUser) {
+      this.props.router.push("/");
+    }
   }
 
   onImageDrop(files) {
@@ -108,6 +107,12 @@ class VideoForm extends React.Component {
     e.preventDefault();
     const video = this.state;
     this.props.createVideo({ video });
+
+    if ((this.state.video_url !== "")
+      && (this.state.title !== "")
+      && (this.state.description !== "")) {
+        this.props.router.push("/");
+      }
   }
 
   update(field) {
