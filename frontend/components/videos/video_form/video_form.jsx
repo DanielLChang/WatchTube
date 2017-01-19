@@ -25,6 +25,7 @@ class VideoForm extends React.Component {
   }
 
   onImageDrop(files) {
+    $(".placeholder-text").hide();
     $(".loading-animation").show();
     this.handleImageUpload(files[0]);
   }
@@ -36,6 +37,7 @@ class VideoForm extends React.Component {
 
     upload.end((err, response) => {
       $(".loading-animation").hide();
+      // $(".new-thumbnail").show();
       if (err) {
         console.error(err);
       }
@@ -43,11 +45,14 @@ class VideoForm extends React.Component {
       if (response.body.secure_url !== '') {
         let videoUrl = response.body.secure_url;
         let thumbUrl = videoUrl.slice(0, -3) + 'jpg';
+        if (videoUrl.slice(-4) === 'webm') {
+          thumbUrl = videoUrl.slice(0, -4) + 'jpg';
+        }
 
-        let newState = merge({}, this.state);
-        newState.video_url = videoUrl;
-        newState.thumbnail_url = thumbUrl;
-        this.state = merge({}, newState);
+        this.setState({
+          video_url: videoUrl,
+          thumbnail_url: thumbUrl
+        });
       }
     });
   }
@@ -61,6 +66,38 @@ class VideoForm extends React.Component {
           </li>
         ))}
       </ul>
+    );
+  }
+
+  completeUpload() {
+
+  }
+
+  renderThumbnail() {
+    return (
+      <div className="file-upload">
+        <Dropzone
+          className="dropzone-upload"
+          multiple={ false }
+          accept="video/*"
+          onDrop={this.onImageDrop.bind(this)}>
+          <div>
+            {this.state.thumbnail_url === '' ?
+            <div>
+              <div className="placeholder-text">
+                Drag a video or click here to upload
+              </div>
+
+              <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
+            </div>
+            :
+            <div>
+              <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
+              <img className="new-thumbnail" style={{display: 'inherit'}} src={this.state.thumbnail_url} width={200} height={110}></img>
+            </div>}
+          </div>
+        </Dropzone>
+      </div>
     );
   }
 
@@ -80,17 +117,13 @@ class VideoForm extends React.Component {
   render() {
     return (
       <div className="video-form-container">
+        <div className="video-form-container-title">
+          Upload a video!
+        </div>
+
         <form className="video-form-form" onSubmit={this.handleSubmit}>
 
-          <div className="file-upload">
-            <Dropzone
-              className="dropzone-upload"
-              multiple={ false }
-              accept="video/*"
-              onDrop={this.onImageDrop.bind(this)}>
-              <img className="loading-animation" hidden={true} src='https://res.cloudinary.com/danielcloud/image/upload/v1484809260/ring-alt_g2or7t.svg'></img>
-            </Dropzone>
-          </div>
+          {this.renderThumbnail()}
 
           <div className="video-form">
 
@@ -113,11 +146,14 @@ class VideoForm extends React.Component {
 
             {this.renderErrors()}
 
+            <label className="video-form-button-container">
               <input className="video-form-button" type="submit" value="Upload Video" />
+            </label>
 
           </div>
 
         </form>
+
       </div>
     );
   }
