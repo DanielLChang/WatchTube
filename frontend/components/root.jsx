@@ -15,7 +15,7 @@ import VideoFormContainer from './videos/video_form/video_form_container';
 const Root = ({ store }) => {
 
   const _clearErrors = () => {
-    debugger;
+    // debugger;
     store.dispatch(clearErrors());
   };
 

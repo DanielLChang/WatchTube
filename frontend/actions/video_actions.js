@@ -46,3 +46,24 @@ export const getOneVideo = (id) => (dispatch) => (
       (err) => dispatch(receiveErrors(err.responseJSON))
   )
 );
+
+export const createVideo = (video) => (dispatch) => (
+  VideoAPIUtil.createVideo(video).then(
+    (video) => dispatch(receiveVideo(video)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
+export const updateVideo = (video) => (dispatch) => (
+  VideoAPIUtil.updateVideo(video).then(
+    (video) => dispatch(receiveVideo(video)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
+export const destroyVideo = (id) => (dispatch) => (
+  VideoAPIUtil.destroyVideo(id).then(
+    (video) => dispatch(receiveVideo(video)),
+      (err) => dispatch(receiveErrors(err.responseJSON))
+  )
+);

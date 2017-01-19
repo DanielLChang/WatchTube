@@ -1,6 +1,6 @@
 class Video < ApplicationRecord
 
-  validates :title, :user, :description, presence: true
+  validates :title, :user, :description, :thumbnail_url, :video_url,  presence: true
 
   # has_attached_file :thumbnail, default_url: "default-thumbnail.jpg"
   # validates_attachment_content_type :thumbnail, content_type: /\Aimage\/.*\z/
