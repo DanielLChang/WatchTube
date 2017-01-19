@@ -5,7 +5,7 @@ const LeftNav = () => (
   <div className="left-nav">
     <Link to="/">
       <img className="header-link"
-        src='http://res.cloudinary.com/danielcloud/image/upload/v1484768881/Logomakr_0oGZcx_d5hbr1.png' />
+        src='https://res.cloudinary.com/danielcloud/image/upload/v1484768881/Logomakr_0oGZcx_d5hbr1.png' />
     </Link>
   </div>
 );

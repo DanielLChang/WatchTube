@@ -113,9 +113,7 @@ class VideoForm extends React.Component {
 
             {this.renderErrors()}
 
-            <label className="video-form-input">
               <input className="video-form-button" type="submit" value="Upload Video" />
-            </label>
 
           </div>
 
