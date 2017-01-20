@@ -68,15 +68,15 @@ users.push(User.create!({
   avatar_url: 'https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png'
 }))
 
-50.times do
-  username = Faker::Pokemon.name
-  while User.find_by_username(username) do username = Faker::Pokemon.name end
+50.times do |idx|
+  username = Faker::Name.name
+  while User.find_by_username(username) do username = Faker::Name.name end
 
   user = User.create({
       username: username,
       email: Faker::Internet.email(username),
       password: "password",
-      avatar_url: avatars.sample
+      avatar_url: avatars[idx]
   })
 
   users.push(user) if user
@@ -551,7 +551,6 @@ all_comments = [
   "Amazing video",
   "First",
   "Like if Daniel brought you here",
-  "Where are the Pokemon videos?",
   "Watching in 2017",
   "LMAO",
   "ROFL",
