@@ -78,24 +78,50 @@ class SearchBar extends React.Component {
     return this.state.value.length > 1;
   }
 
-  renderSuggestion(suggestion) {
+  renderSuggestion(suggestion, { query }) {
+    let preVal = "", lastPreVal = "";
+    let postVal = "", lastPostVal = "";
+    let lastWordVal = "";
+    let val = query;
 
-    let preVal = "";
-    let val = this.state.value;
-    let postVal = "";
+    let suggestionSplit = suggestion.split(" ");
+    let values = val.split(" ");
 
-    let preIdx = suggestion.indexOf(val);
-    preVal = suggestion.slice(0, preIdx);
-    let postIdx = preIdx + val.length;
-    postVal = suggestion.slice(postIdx);
+    if (suggestionSplit.length > 1) {
+      let lastWordIdx = suggestionSplit.length - 1;
+      let lastWord = suggestionSplit.pop();
+      lastWordVal = values[lastWordIdx];
+      let lastPreIdx = lastWord.indexOf(values[lastWordIdx]);
+      lastPreVal = lastWord.slice(0, lastPreIdx);
+      let lastPostIdx = lastPreIdx + values[lastWordIdx].length;
+      lastPostVal = lastWord.slice(lastPostIdx);
+    }
+    let preWord = suggestionSplit.join(" ");
 
-    return (
-      <span className="searchbar-suggestions">
-        {preVal}
-        <b className="suggestion-bold">{val}</b>
-        {postVal}
-      </span>
-    );
+    if (values.length > 1) {
+      return (
+        <span className="searchbar-suggestions">
+          <b className="suggestion-bold">{preWord} </b>
+
+          {lastPreVal}
+          <b className="suggestion-bold">{lastWordVal}</b>
+          {lastPostVal}
+        </span>
+      );
+    } else {
+      let preIdx = suggestion.indexOf(val);
+      preVal = suggestion.slice(0, preIdx);
+      let postIdx = preIdx + val.length;
+      postVal = suggestion.slice(postIdx);
+
+      return (
+        <span className="searchbar-suggestions">
+          {preVal}
+          <b className="suggestion-bold">{val}</b>
+          {postVal}
+        </span>
+      );
+    }
   }
 
   handleSubmit(e){
@@ -149,10 +175,8 @@ class SearchBar extends React.Component {
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
             onSuggestionsClearRequested={this.onSuggestionsClearRequested}
             getSuggestionValue={this.getSuggestionValue}
-            shouldRenderSuggestions={this.shouldRenderSuggestions}
             renderSuggestion={this.renderSuggestion}
             onSuggestionSelected={this.handleSubmit}
-            focusInputOnSuggestionClick={true}
             inputProps={inputProps} />
         </div>
 

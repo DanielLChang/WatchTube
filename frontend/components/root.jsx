@@ -53,11 +53,11 @@ const Root = ({ store }) => {
             component={ SessionFormContainer }
             onEnter={ _redirectIfLoggedIn }
             onLeave={ _clearErrors }/>
-          <Router path="videos"
+          <Router path="/videos"
             component={ VideoIndexContainer }/>
-          <Router path="videos/:id"
+          <Router path="/videos/:id"
             component={ VideoShowContainer }/>
-          <Router path="search"
+          <Router path="/search"
             component={ SearchIndexContainer }
             onEnter={ _fetchSearchedVideos }
             onChange={ _fetchSearchedVideos }/>
