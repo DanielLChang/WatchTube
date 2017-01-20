@@ -30,39 +30,46 @@ textarea {
       .comment-form-text {
         padding-left: 5px;
         width: 100%;
+        font-size: 12px;
       }
     }
     .submit-button {
       float: right;
       cursor: pointer;
-      border: 1px solid #36311F;
+      border: 1px solid #e89b4a;
       border-radius: 3px;
       color: #36311F;
       height: 30px;
       width: 72px;
-      background-color: #d8d7d6;
+      background-color: #e89b4a;
       font-size: 12px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     }
     .submit-button:hover {
       float: right;
       cursor: pointer;
-      border: 1px solid #36311F;
+      border: 1px solid #cc7a22;
       border-radius: 3px;
       color: #f9f9f9;
       height: 30px;
       width: 72px;
-      background-color: #36311F;
+      background-color: #cc7a22;
       font-size: 12px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     }
     .submit-button:disabled {
-      border: 1px solid #36311F;
-      color: #e2e2e2;
-      background-color: #a3906b;
+      border: 1px solid #829191;
+      color: #fefdff;
+      background-color: #829191;
+      font-size: 12px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     }
     .submit-button:disabled:hover {
-      border: 1px solid #36311F;
-      color: #e2e2e2;
-      background-color: #a3906b;
+      border: 1px solid #829191;
+      color: #fefdff;
+      background-color: #829191;
+      font-size: 12px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     }
   }
   .comment-items-container {
@@ -87,7 +94,7 @@ textarea {
           .comment-author-username {
             font-size: 13px;
             font-weight: 500;
-            color: #1b5dc6;
+            color: #36311F;
             padding-right: 10px;
           }
           .comment-item-date {
@@ -108,24 +115,26 @@ textarea {
           .comment-buttons {
             float: right;
             cursor: pointer;
-            border: 1px solid #36311F;
+            border: 1px solid #e89b4a;
             border-radius: 3px;
             color: #36311F;
             height: 30px;
             width: 72px;
-            background-color: #d8d7d6;
+            background-color: #e89b4a;
             font-size: 12px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
           }
           .comment-buttons:hover {
             float: right;
             cursor: pointer;
-            border: 1px solid #36311F;
+            border: 1px solid #cc7a22;
             border-radius: 3px;
             color: #f9f9f9;
             height: 30px;
             width: 72px;
-            background-color: #36311F;
+            background-color: #cc7a22;
             font-size: 12px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
           }
         }
       }

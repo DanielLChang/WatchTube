@@ -29,11 +29,7 @@
       font-size: 60px;
       color: $color3;
       font-weight: bolder;
-      text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+      text-shadow: 1px 1px 5px #0c0c0c;
       margin-bottom: 35px;
       letter-spacing: 3px;
     }
@@ -50,24 +46,28 @@
       1px 1px 0 #000;
       margin-bottom: 35px;
       letter-spacing: 3px;
+      text-shadow: 1px 1px 5px #0c0c0c;
     }
     a {
       z-index: 1000;
       .banner-link {
         cursor: pointer;
-        border: 1px solid #36311F;
+        border: 1px solid #fefdff;
         border-radius: 3px;
         color: #36311F;
         height: 50px;
         width: 150px;
-        background-color: #d8d7d6;
+        background-color: #fefdff;
         font-size: 15px;
         font-weight: bold;
         padding: 0;
+        box-shadow: 1px 1px 1px #0c0c0c;
       }
       .banner-link:hover {
         color: #f9f9f9;
-        background-color: #e55d02;
+        background-color: #cc7a22;
+        border: 1px solid #cc7a22;
+        box-shadow: 1px 1px 5px #0c0c0c;
       }
     }
   }
