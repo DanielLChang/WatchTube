@@ -11,7 +11,7 @@ textarea {
   box-shadow: 0 1px 3px 0 #dce0e0;
   margin-bottom: 2%;
   .comments-title {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     padding-bottom: 2%;
   }
@@ -30,7 +30,7 @@ textarea {
       .comment-form-text {
         padding-left: 5px;
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
       }
     }
     .submit-button {
@@ -42,7 +42,7 @@ textarea {
       height: 30px;
       width: 72px;
       background-color: #94d2b2;
-      font-size: 12px;
+      font-size: 13px;
       box-shadow: 0 1px 3px 0 #dce0e0;
     }
     .submit-button:hover {
@@ -54,21 +54,21 @@ textarea {
       height: 30px;
       width: 72px;
       background-color: #6ec297;
-      font-size: 12px;
+      font-size: 13px;
       box-shadow: 0 1px 3px 0 #dce0e0;
     }
     .submit-button:disabled {
       border: 1px solid #90aa97;
       color: #fefdff;
       background-color: #90aa97;
-      font-size: 12px;
+      font-size: 13px;
       box-shadow: 0 1px 3px 0 #dce0e0;
     }
     .submit-button:disabled:hover {
       border: 1px solid #90aa97;
       color: #fefdff;
       background-color: #90aa97;
-      font-size: 12px;
+      font-size: 13px;
       box-shadow: 0 1px 3px 0 #dce0e0;
     }
   }
@@ -86,24 +86,24 @@ textarea {
       .comment-item-details {
         display: flex;
         flex-direction: column;
-        padding-left: 5px;
+        padding-left: 10px;
         .comment-user-details {
           display: flex;
           width: 395px;
           padding-bottom: 5px;
           .comment-author-username {
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 500;
             color: #36311F;
             padding-right: 10px;
           }
           .comment-item-date {
-            font-size: 13px;
+            font-size: 15px;
             color: #8b8d8e;
           }
         }
         .comment-item-body {
-          font-size: 13px;
+          font-size: 15px;
         }
       }
       .comment-buttons-container {
@@ -121,7 +121,7 @@ textarea {
             height: 30px;
             width: 72px;
             background-color: #94d2b2;
-            font-size: 12px;
+            font-size: 13px;
             box-shadow: 0 1px 3px 0 #dce0e0;
           }
           .comment-buttons:hover {
@@ -133,7 +133,7 @@ textarea {
             height: 30px;
             width: 72px;
             background-color: #6ec297;
-            font-size: 12px;
+            font-size: 13px;
             box-shadow: 0 1px 3px 0 #dce0e0;
           }
         }

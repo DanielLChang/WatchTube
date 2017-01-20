@@ -43,13 +43,14 @@ video {
       }
       .video-username {
         padding-left: 10px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 500;
         padding-bottom: 2%;
       }
       .video-views {
         float: right;
         padding-top: 10px;
+        font-size: 18px;
       }
     }
     .video-detail-container {
@@ -60,12 +61,12 @@ video {
       height: 70px;
       margin-bottom: 2%;
       .video-date {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: bold;
         padding-bottom: 2%;
       }
       .video-description {
-        font-size: 13px;
+        font-size: 15px;
         padding-bottom: 2%;
         border-bottom: 1px solid #dedfe0;
       }
@@ -84,6 +85,7 @@ video {
       padding-bottom: 5px;
       margin-bottom: 5px;
       border-bottom: 1px solid #dedfe0;
+      font-size: 18px;
     }
     .sidebar-video-item {
       display: flex;
@@ -101,7 +103,7 @@ video {
         width: 100%;
         float: right;
         flex-direction: column;
-        padding-left: 5%;
+        padding-left: 10px;
         .sidebar-video-item-title {
           text-align: left;
           font-size: 13px;
@@ -110,13 +112,13 @@ video {
           float: left;
         }
         .sidebar-video-item-username {
-          font-size: 11px;
+          font-size: 13px;
           color: #858789;
           padding: 3px;
           float: left;
         }
         .sidebar-video-item-views {
-          font-size: 11px;
+          font-size: 13px;
           color: #858789;
           float: left;
           padding: 3px;
