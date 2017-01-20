@@ -68,6 +68,9 @@
         border: 1px solid #6ec297;
         box-shadow: 0 1px 3px 0 #dce0e0;
       }
+      .banner-link:focus {
+        outline: none;
+      }
     }
   }
 }

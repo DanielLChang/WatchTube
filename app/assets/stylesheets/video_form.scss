@@ -107,6 +107,9 @@
           margin-bottom: 0;
           font-weight: bold;
         }
+        .video-form-button:focus {
+          outline: none;
+        }
       }
     }
   }

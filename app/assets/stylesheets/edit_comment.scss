@@ -47,6 +47,9 @@
           margin-left: 10px;
           box-shadow: 0 1px 3px 0 #dce0e0;
         }
+        .submit-button:focus {
+          outline: none;
+        }
         .submit-button:disabled {
           border: 1px solid #90aa97;
           color: #fefdff;
@@ -79,6 +82,9 @@
           font-size: 13px;
           margin-left: 10px;
           box-shadow: 0 1px 3px 0 #dce0e0;
+        }
+        .cancel-button:focus {
+          outline: none;
         }
       }
     }

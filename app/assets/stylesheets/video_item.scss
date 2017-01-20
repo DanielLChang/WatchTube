@@ -32,8 +32,9 @@
     color: black;
   }
   .video-item-username {
+    cursor: default;
     font-size: 13px;
-    // color: #858789;
+    color: #858789;
     padding: 3px;
   }
   .video-item-username:link {
@@ -44,14 +45,14 @@
     color: #858789;
     text-decoration: none;
   }
-  .video-item-username:hover {
-    color: #36311F;
-    text-decoration: underline;
-  }
-  .video-item-username:active {
-    color: #36311F;
-    text-decoration: none;
-  }
+  // .video-item-username:hover {
+  //   color: #36311F;
+  //   text-decoration: underline;
+  // }
+  // .video-item-username:active {
+  //   color: #36311F;
+  //   text-decoration: none;
+  // }
 
   .video-item-views {
     font-size: 13px;

@@ -27,8 +27,8 @@ class VideoItem extends React.Component {
           </div>
           {/* username */}
           {/* No user page right now. Link to Home */}
-          <div>
-            <Link className="video-item-username" to='/'>{video.user.username}</Link>
+          <div className="video-item-username">
+            {video.user.username}
           </div>
           {/* views and timeago */}
           <div className="video-item-views">

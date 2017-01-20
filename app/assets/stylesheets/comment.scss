@@ -14,6 +14,7 @@ textarea {
     font-size: 15px;
     font-weight: bold;
     padding-bottom: 2%;
+    color: #484848;
   }
   .comment-creator {
     padding-bottom: 2%;
@@ -57,6 +58,9 @@ textarea {
       font-size: 13px;
       box-shadow: 0 1px 3px 0 #dce0e0;
     }
+    .submit-button:focus {
+      outline: none;
+    }
     .submit-button:disabled {
       border: 1px solid #90aa97;
       color: #fefdff;
@@ -94,8 +98,8 @@ textarea {
           .comment-author-username {
             font-size: 15px;
             font-weight: 500;
-            color: #36311F;
             padding-right: 10px;
+            color: #484848;
           }
           .comment-item-date {
             font-size: 15px;
@@ -104,6 +108,7 @@ textarea {
         }
         .comment-item-body {
           font-size: 15px;
+          color: #484848;
         }
       }
       .comment-buttons-container {
@@ -111,7 +116,7 @@ textarea {
         float: right;
         align-items: center;
         .comment-buttons-padding {
-          padding-left: 10px;
+          padding-left: 8px;
           .comment-buttons {
             float: right;
             cursor: pointer;
@@ -135,6 +140,9 @@ textarea {
             background-color: #6ec297;
             font-size: 13px;
             box-shadow: 0 1px 3px 0 #dce0e0;
+          }
+          .comment-buttons:focus {
+            outline: none;
           }
         }
       }
