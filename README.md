@@ -1,10 +1,10 @@
 # WatchTube
 
-[WatchTube.stream][watchtube] is a web application inspired by YouTube for users to stream and share videos. WatchTube allows users to upload their own videos and comment on any other video as well.
+[Watchtube.stream][watchtube] is a web application inspired by YouTube for users to stream and share videos. WatchTube allows users to upload their own videos and comment on any other video as well.
 
 WatchTube is a personal project by Daniel Chang.
 
-[watchtube]: www.watchtube.stream
+[watchtube]: http://watchtube.stream
 
 ![WatchTube home page: www.watchtube.stream][home page]
 
