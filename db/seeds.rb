@@ -440,6 +440,8 @@ all_comments = [
   "10/10 would recommend.",
   "I wish there were more videos like this.",
   "Please hire Daniel Chang",
+  "Please hire Daniel Chang",
+  "Please hire Daniel Chang",
   "Amazing video",
   "First",
   "Like if Daniel brought you here",

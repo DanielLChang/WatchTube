@@ -1,23 +1,23 @@
 .searchbar-container {
   display: flex;
   position: relative;
+  box-shadow: 0 1px 3px 0 #dce0e0;
   .searchbar-input {
     min-width: 500px;
   }
   .searchbar-submit {
-    background-color: #eaebed;
-    border: 1px solid #cccdce;
-
-    // box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: #94d2b2;
+    border: 1px solid #94d2b2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     .fa-search {
       min-width: 50px;
     }
   }
   .searchbar-submit:hover {
-    background-color: #cecece;
+    background-color: #6ec297;
     cursor: pointer;
 
-    // box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     .fa-search {
       min-width: 50px;
     }
@@ -61,7 +61,7 @@
     font-size: 16px;
     z-index: 2;
     width: 99.5%;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 #dce0e0;
   }
   .react-autosuggest__suggestion {
     cursor: pointer;

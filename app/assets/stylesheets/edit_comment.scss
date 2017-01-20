@@ -6,7 +6,7 @@
     .edit-comment-author-avatar {
       height: 50px;
       background-color: white;
-      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 3px 0 #dce0e0;
       margin-right: 5px;
     }
     .edit-comment-text {
@@ -24,61 +24,61 @@
         .submit-button {
           float: right;
           cursor: pointer;
-          border: 1px solid #e89b4a;
+          border: 1px solid #55a07a;
           border-radius: 3px;
           color: #36311F;
           height: 30px;
           width: 72px;
-          background-color: #e89b4a;
+          background-color: #55a07a;
           font-size: 12px;
           margin-left: 10px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 #dce0e0;
         }
         .submit-button:hover {
           float: right;
           cursor: pointer;
-          border: 1px solid #cc7a22;
+          border: 1px solid #6ea061;
           border-radius: 3px;
           color: #f9f9f9;
           height: 30px;
           width: 72px;
-          background-color: #cc7a22;
+          background-color: #6ea061;
           font-size: 12px;
           margin-left: 10px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 #dce0e0;
         }
         .submit-button:disabled {
-          border: 1px solid #829191;
+          border: 1px solid #90aa97;
           color: #fefdff;
-          background-color: #829191;
+          background-color: #90aa97;
           font-size: 12px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 #dce0e0;
         }
         .cancel-button {
           float: right;
           cursor: pointer;
-          border: 1px solid #e89b4a;
+          border: 1px solid #55a07a;
           border-radius: 3px;
           color: #36311F;
           height: 30px;
           width: 72px;
-          background-color: #e89b4a;
+          background-color: #55a07a;
           font-size: 12px;
           margin-left: 10px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 #dce0e0;
         }
         .cancel-button:hover {
           float: right;
           cursor: pointer;
-          border: 1px solid #cc7a22;
+          border: 1px solid #6ea061;
           border-radius: 3px;
           color: #f9f9f9;
           height: 30px;
           width: 72px;
-          background-color: #cc7a22;
+          background-color: #6ea061;
           font-size: 12px;
           margin-left: 10px;
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 #dce0e0;
         }
       }
     }

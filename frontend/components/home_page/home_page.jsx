@@ -51,9 +51,11 @@ class HomePage extends React.Component {
     return (
       <div className="home-page">
         <div className="banner">
-          <div className="banner-picture"></div>
-          <h1>DIVE IN</h1>
-          <h2>Start Watching</h2>
+          <div className="banner-picture">
+            <div className="banner-background"></div>
+          </div>
+          <h1>Sit Down</h1>
+          <h2>Watch Another</h2>
           <Link to="/videos">
               <input className="banner-link" type="submit" value="More Videos" />
           </Link>
