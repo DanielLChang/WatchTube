@@ -2,7 +2,7 @@
 
 Heroku Link: [WatchTube]
 
-[WatchTube]: http://watchtube.herokuapp.com 
+[WatchTube.stream]: watchtube.herokuapp.com
 
 
 ## Minimum Viable Product

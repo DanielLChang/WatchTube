@@ -1,7 +1,7 @@
 # WatchTube
 
-[WatchTube live][heroku]
-[heroku]: http://watchtube.herokuapp.com
+[WatchTube.stream][heroku]
+[heroku]: watchtube.herokuapp.com
 
 WatchTube is a full-stack web application inspired by YouTube. It utilizes Ruby on Rails and a PostgreSQL database for the backend, and React/Redux framework for the frontend.
 

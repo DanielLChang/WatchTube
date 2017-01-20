@@ -80,9 +80,9 @@ class SearchBar extends React.Component {
 
   renderSuggestion(suggestion) {
     return (
-      <div className="searchbar-suggestions">
+      <strong className="searchbar-suggestions">
         {suggestion}
-      </div>
+      </strong>
     );
   }
 

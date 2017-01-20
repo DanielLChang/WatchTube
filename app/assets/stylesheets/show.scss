@@ -1,7 +1,9 @@
 @import 'palette';
 
 video {
-  background-color: $color3;
+  background-color: #3f3f3f;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 #dce0e0;
 }
 
 .video-show-container {
@@ -62,7 +64,7 @@ video {
       background-color: $color3;
       border-radius: 5px;
       box-shadow: 0 1px 3px 0 #dce0e0;
-      height: 70px;
+      height: 100px;
       margin-bottom: 2%;
       .video-date {
         font-size: 15px;

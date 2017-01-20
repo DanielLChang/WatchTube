@@ -156,7 +156,7 @@ class SessionForm extends React.Component {
 
             <img
               className="login-form-logo"
-              src='https://res.cloudinary.com/danielcloud/image/upload/v1484875836/Logomakr_9FRHmE_xojgk5.png'/>
+              src='https://res.cloudinary.com/dxfu1kzhk/image/upload/v1484896684/Logomakr_4VzmyO_i6fvw4.png'/>
             <h3 className="login-form-message">
               {text} and start watching!
             </h3>

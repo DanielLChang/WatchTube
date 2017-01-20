@@ -28,6 +28,7 @@
       height: 100%;
       padding-right: 15px;
       .dropzone-upload {
+        cursor: pointer;
         height: 110px;
         width: 200px;
         border: 1px solid black;
@@ -49,6 +50,9 @@
         .loading-animation {
           height: 100px;
         }
+      }
+      .dropzone-upload:active {
+        transform: translateY(4px);
       }
     }
     .video-form {

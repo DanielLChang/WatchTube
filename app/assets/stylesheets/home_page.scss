@@ -3,7 +3,7 @@
 .home-page {
   min-height: 1000px;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #d9d9db;
   justify-content: center;
   .banner {
     display: flex;
@@ -41,9 +41,8 @@
     h2 {
       z-index: 1000;
       display: flex;
-      font-size: 50px;
+      font-size: 40px;
       color: $color3;
-      font-weight: bolder;
       margin-bottom: 35px;
       letter-spacing: 3px;
     }
