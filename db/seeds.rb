@@ -122,7 +122,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Too Much Heaven",
-    description: "From the album 'The Ultimate Bee Gees' © & ℗ Barry Gibb, The Estate of Robin Gibb and The Estate of Maurice Gibb, under exclusive license to Warner Strategic Marketing Inc., a Warner Music Group Company",
+    description: "From the album 'The Ultimate Bee Gees'",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484889761/Bee_Gees_-_Too_Much_Heaven_Official_Video_ufdav1.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484889761/Bee_Gees_-_Too_Much_Heaven_Official_Video_ufdav1.jpg",
     user_id: users.sample.id,
@@ -133,7 +133,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "How Deep Is Your Love",
-    description: "From the album 'The Ultimate Bee Gees' © & ℗ Barry Gibb, The Estate of Robin Gibb and The Estate of Maurice Gibb, under exclusive license to Warner Strategic Marketing Inc., a Warner Music Group Company",
+    description: "From the album 'The Ultimate Bee Gees'",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484887700/Bee_Gees_-_How_Deep_Is_Your_Love_Official_Video_zqvjio.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484887700/Bee_Gees_-_How_Deep_Is_Your_Love_Official_Video_zqvjio.jpg",
     user_id: users.sample.id,
@@ -177,7 +177,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Mickeys Delayed Date",
-    description: "Enjoy animated and live action Disney cartoons and short films. We have all your favorite original and new Disney characters! Enjoy classic Mickey Mouse cartoons with Donald Duck and Goofy to Schoolhouse Rock throwbacks and new digital shorts like Disney’s Planes.",
+    description: "Enjoy animated and live action Disney cartoons and short films.",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484888504/Mickeys_Delayed_Date_A_Classic_Mickey_Short_Have_A_Laugh_o6phov.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484888504/Mickeys_Delayed_Date_A_Classic_Mickey_Short_Have_A_Laugh_o6phov.jpg",
     user_id: users.sample.id,
@@ -199,7 +199,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Winter Storage",
-    description: "Brave the cold with Donald Duck and Goofy as they embark on a hilarious expedition to the South Pole in this classic Disney cartoon short.",
+    description: "Donald feuds with Chip 'n' Dale over newly planted acorns.",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484888718/Winter_Storage_A_Classic_Mickey_Short_Have_A_Laugh_aphokm.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484888718/Winter_Storage_A_Classic_Mickey_Short_Have_A_Laugh_aphokm.jpg",
     user_id: users.sample.id,
@@ -430,7 +430,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Kiss The Rain",
-    description: "Yiruma, a popular Korean pianist and composer released the album [The Best Reminiscent 10th Anniversary] to commemorate 10th Anniversary.",
+    description: "Yiruma, a popular Korean pianist and composer released the album 'The Best Reminiscent 10th Anniversary' to commemorate 10th Anniversary.",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892330/Yiruma_%E1%84%8B%E1%85%B5%E1%84%85%E1%85%AE%E1%84%86%E1%85%A1_-_Kiss_the_Rain_j8mdja.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892330/Yiruma_%E1%84%8B%E1%85%B5%E1%84%85%E1%85%AE%E1%84%86%E1%85%A1_-_Kiss_the_Rain_j8mdja.jpg",
     user_id: users.sample.id,
@@ -441,7 +441,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "River Flows In You",
-    description: "Yiruma, a popular Korean pianist and composer released the album [The Best Reminiscent 10th Anniversary] to commemorate 10th Anniversary.",
+    description: "Yiruma, a popular Korean pianist and composer released the album 'The Best Reminiscent 10th Anniversary' to commemorate 10th Anniversary.",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892300/Yiruma_%E1%84%8B%E1%85%B5%E1%84%85%E1%85%AE%E1%84%86%E1%85%A1_-_River_Flows_in_You_u0h5f8.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892300/Yiruma_%E1%84%8B%E1%85%B5%E1%84%85%E1%85%AE%E1%84%86%E1%85%A1_-_River_Flows_in_You_u0h5f8.jpg",
     user_id: users.sample.id,
@@ -485,7 +485,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "I Just Called To Say I Love You",
-    description: "Music video by Stevie Wonder performing I Just Called To Say I Love You. (C) 2005 Motown Records, a Division of UMG Recordings, Inc.",
+    description: "Music video by Stevie Wonder performing I Just Called To Say I Love You. 2005 Motown Records, a Division of UMG Recordings, Inc.",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484893145/Stevie_Wonder_-_I_Just_Called_To_Say_I_Love_You_tiirbj.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484893145/Stevie_Wonder_-_I_Just_Called_To_Say_I_Love_You_tiirbj.jpg",
     user_id: users.sample.id,
@@ -507,7 +507,7 @@ videos.push(
 videos.push(
   Video.create!({
     title: "Colors Of The Wind",
-    description: "Music video by Tori Kelly performing Colors Of The Wind. (C) 2015 The Verve Music Group, a division of UMG Recordings Inc",
+    description: "Music video by Tori Kelly performing Colors Of The Wind. 2015 The Verve Music Group, a division of UMG Recordings Inc",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892501/Tori_Kelly_-_Colors_Of_The_Wind_my7dxt.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484892501/Tori_Kelly_-_Colors_Of_The_Wind_my7dxt.jpg",
     user_id: users.sample.id,

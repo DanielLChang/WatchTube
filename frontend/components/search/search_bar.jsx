@@ -21,6 +21,7 @@ class SearchBar extends React.Component {
     this.shouldRenderSuggestions = this.shouldRenderSuggestions.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.getAllWords = this.getAllWords.bind(this);
+    this.renderSuggestion = this.renderSuggestion.bind(this);
   }
 
   componentWillReceiveProps(nextProps){
@@ -55,7 +56,6 @@ class SearchBar extends React.Component {
       return (word) => regex.test(word);
     };
 
-
     while(searchTerms.length > 0){
       const term = searchTerms.shift();
       const escapedValue = this.escapeRegexCharacters(term);
@@ -71,7 +71,7 @@ class SearchBar extends React.Component {
 
       suggestions = newSuggestions;
     }
-    return suggestions;
+    return suggestions.slice(0, 5);
   }
 
   shouldRenderSuggestions() {
@@ -79,10 +79,22 @@ class SearchBar extends React.Component {
   }
 
   renderSuggestion(suggestion) {
+
+    let preVal = "";
+    let val = this.state.value;
+    let postVal = "";
+
+    let preIdx = suggestion.indexOf(val);
+    preVal = suggestion.slice(0, preIdx);
+    let postIdx = preIdx + val.length;
+    postVal = suggestion.slice(postIdx);
+
     return (
-      <strong className="searchbar-suggestions">
-        {suggestion}
-      </strong>
+      <span className="searchbar-suggestions">
+        {preVal}
+        <b className="suggestion-bold">{val}</b>
+        {postVal}
+      </span>
     );
   }
 
@@ -128,8 +140,6 @@ class SearchBar extends React.Component {
       onChange: this.onChange,
       placeholder: "Search"
     };
-
-    // debugger;
 
     return (
       <form className="searchbar-container" onSubmit={this.handleSubmit}>

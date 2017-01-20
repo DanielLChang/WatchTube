@@ -4,7 +4,7 @@
 
 WatchTube is a personal project by Daniel Chang.
 
-[watchtube]: http://watchtube.stream
+[watchtube]: http://www.watchtube.stream
 
 ![WatchTube home page: www.watchtube.stream][home page]
 

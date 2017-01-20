@@ -66,6 +66,9 @@
   .react-autosuggest__suggestion {
     cursor: pointer;
     padding: 5px;
+    .suggestion-bold {
+      font-weight: bold;
+    }
   }
   .react-autosuggest__suggestion--focused {
     background-color: #e0e1e2;
