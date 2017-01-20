@@ -15,7 +15,7 @@ Users will be stored in a table containing their `id`, `username`, `email`, `pas
 ### Videos
 Users will be able to upload videos onto the site. References to videos will be stored in a table in the PostgreSQL database containing the video `id`, `title`, `description`, `video_url`, `thumbnail`, `views`, and `user_id`.
 
-Videos will be displayed as either a `VideoItem` or `Video`. As a `VideoItem`, the `thumbnail`, `views`, and `username` for that video will be displayed. As a `Video`, the full description will be displayed. This includes `comments` and `likes`. If a user is currently watching a video and redirects to another page that does not have a `Video`, the current `Video` will continue to play on the bottom right corner of the page.
+Videos will be displayed as either a `VideoItem` or `Video`. As a `VideoItem`, the `thumbnail`, `views`, and `username` for that video will be displayed. As a `Video`, the full description will be displayed. This includes `comments` and `likes`.
 
 ### Comments
 Users will be able to add comments to videos. Users will only be allowed to comment if they are logged in. After the addition of a comment, users will only be allowed to edit/delete comments that belong to them.

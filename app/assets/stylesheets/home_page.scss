@@ -22,7 +22,8 @@
       // background-attachment: fixed;
       background-position: center;
       opacity: .8;
-      width: 1920px;
+      max-width: 1920px;
+      min-width: 100%;
       height: 500px;
       .banner-background {
         width: 100%;
@@ -61,13 +62,11 @@
         font-size: 15px;
         font-weight: bold;
         padding: 0;
-        box-shadow: 0 1px 3px 0 #dce0e0;
       }
       .banner-link:hover {
         color: #f9f9f9;
         background-color: #6ec297;
         border: 1px solid #6ec297;
-        box-shadow: 0 1px 3px 0 #dce0e0;
       }
       .banner-link:focus {
         outline: none;

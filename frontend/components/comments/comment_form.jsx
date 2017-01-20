@@ -19,6 +19,10 @@ class CommentForm extends React.Component {
     if (!this.props.currentUser) this.props.router.push("/login");
   }
 
+  componentDidMount() {
+    $(".creator-buttons .submit-button").prop('disabled', true);
+  }
+
   componentDidUpdate() {
     if(this.state.body === ""){
       $(".creator-buttons .submit-button").prop('disabled',true);

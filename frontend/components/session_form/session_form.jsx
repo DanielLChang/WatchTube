@@ -10,7 +10,7 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      avatar_url: 'https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png',
+      avatar_url: 'https://res.cloudinary.com/dxfu1kzhk/image/upload/v1484934619/turtle_ho9l5f.png',
       email: "",
       username: "",
       password: ""
