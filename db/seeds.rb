@@ -65,7 +65,7 @@ users.push(User.create!({
   username: "Demo",
   email: "demo@gmail.com",
   password: "password",
-  avatar_url: 'https://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png'
+  avatar_url: 'https://res.cloudinary.com/dxfu1kzhk/image/upload/v1484934619/turtle_ho9l5f.png'
 }))
 
 50.times do |idx|

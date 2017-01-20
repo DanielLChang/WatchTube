@@ -52,7 +52,7 @@ class CommentForm extends React.Component {
   render(){
     const { currentUser } = this.props;
 
-    let avatarUrl = "http://res.cloudinary.com/danielcloud/image/upload/v1484526124/defaut_avatar_qlnfg8.png";
+    let avatarUrl = "https://res.cloudinary.com/dxfu1kzhk/image/upload/v1484934619/turtle_ho9l5f.png";
     if(currentUser){
       avatarUrl = currentUser.avatar_url;
     }
