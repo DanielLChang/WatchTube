@@ -696,7 +696,7 @@ videos.push(
     title: "Good To Me",
     description: "Floppy Circus. Summery feel good vibes",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988817/Floppy_Circus_-_Good_To_Me_l5yajc.mp4",
-    thumbnail_url: "hhttps://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988817/Floppy_Circus_-_Good_To_Me_l5yajc.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988817/Floppy_Circus_-_Good_To_Me_l5yajc.jpg",
     user_id: users.sample.id,
     views: rand(1000000)
   })
