@@ -26,3 +26,5 @@ Other frontend dependencies are:
 - React Router
 - React History to manipulate browser history
 - Babel to transpile JSX into JavaScript.
+- React Dropzone to accept images and videos from users
+- Superagent to transfer the uploaded image/video

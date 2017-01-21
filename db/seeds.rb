@@ -528,6 +528,226 @@ videos.push(
 
 videos.push(
   Video.create!({
+    title: "Zelda x Ghibli Film Trailer",
+    description: "This is just a concept. Not attempting to develop an actual movie",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987200/Zelda_x_Ghibli_Film_Trailer_qaypjm.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987200/Zelda_x_Ghibli_Film_Trailer_qaypjm.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "You're Welcome",
+    description: "A young woman uses her navigational talents to set sail for a fabled island. Joining her on the adventure is her hero, the legendary demi-god Maui.",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987706/Disney_s_MOANA_-_You_re_Welcome_-_FULL_Song_Animation_2016_hsgfwv.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987706/Disney_s_MOANA_-_You_re_Welcome_-_FULL_Song_Animation_2016_hsgfwv.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Under The Sea",
+    description: "Music video by Samuel E. Wright performing Under the Sea. 2013 Walt Disney Records",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987454/The_Little_Mermaid_-_Under_the_Sea_ty4xwb.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987454/The_Little_Mermaid_-_Under_the_Sea_ty4xwb.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Colors of the Wind",
+    description: "'Colors of the Wind' by composer Alan Menken and lyricist Stephen Schwartz",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986997/Pocahontas_-_Colors_of_the_Wind_Disney_Song_s6aszj.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986997/Pocahontas_-_Colors_of_the_Wind_Disney_Song_s6aszj.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Hakuna Matata",
+    description: "From Disney The Lion King",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987587/The_Lion_King_-_Hakuna_Matata_HD_ykmody.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987587/The_Lion_King_-_Hakuna_Matata_HD_ykmody.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "I'll Make A Man Out Of You",
+    description: "Lovely song from Disney's Mulan",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986716/Mulan_-_i_ll_make_a_man_out_of_you_anj09i.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986716/Mulan_-_i_ll_make_a_man_out_of_you_anj09i.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Tale As Old As Time",
+    description: "Beauty and the Beast from Disney",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987224/Beauty_and_the_Beast_Tale_As_Old_As_Time_HD_xx4vps.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987224/Beauty_and_the_Beast_Tale_As_Old_As_Time_HD_xx4vps.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "A Whole New World",
+    description: "A Whole New World from the Disney movie Aladdin",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986225/Aladdin_-_A_Whole_New_World_High_Quality_eqfmtr.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986225/Aladdin_-_A_Whole_New_World_High_Quality_eqfmtr.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Snowfall",
+    description: "Flavors. Video footage is from 'Byousoku 5 Centimeter'",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986137/flavors_-_snowfall_gsh8uc.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986137/flavors_-_snowfall_gsh8uc.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Morning Clouds",
+    description: "By Saib. Artwork by Dominik Mayer",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986819/saib._-_morning_clouds_zpabl8.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986819/saib._-_morning_clouds_zpabl8.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "You",
+    description: "By LO-FI LE-VI. In love with this song.",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986409/LO-FI_LE-VI_-_YOU_vsdaia.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484986409/LO-FI_LE-VI_-_YOU_vsdaia.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Waltz for Nujabes",
+    description: "Nujabes and fellows. By Audiohope",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988365/Audiohope_-_Waltz_for_Nujabes_hz8dt6.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988365/Audiohope_-_Waltz_for_Nujabes_hz8dt6.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Limes",
+    description: "By Blase. Nujabes and fellows",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988077/Limes_-_Blase%CC%81_goht7k.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988077/Limes_-_Blase%CC%81_goht7k.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "The Good Times",
+    description: "By DeKobe. Nujabes and fellows",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987935/DeKobe_-_The_Good_Times_vpkliy.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484987935/DeKobe_-_The_Good_Times_vpkliy.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Apple AirPods Review: Fully Wireless!",
+    description: "AirPods: fully wireless earbuds that launched with iPhone 7. The hype is over. Are they any good?",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988426/Apple_AirPods_Review_Fully_Wireless_fbievh.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988426/Apple_AirPods_Review_Fully_Wireless_fbievh.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Good To Me",
+    description: "Floppy Circus. Summery feel good vibes",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988817/Floppy_Circus_-_Good_To_Me_l5yajc.mp4",
+    thumbnail_url: "hhttps://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988817/Floppy_Circus_-_Good_To_Me_l5yajc.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Google Pixel Impressions!",
+    description: "Pixel and Pixel XL are official. This is everything you need to know!",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988163/Google_Pixel_Impressions_yqrdyh.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988163/Google_Pixel_Impressions_yqrdyh.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "The iPhone 7 Plus Model!",
+    description: "iPhone 7 Pro and iPhone 7 Plus hype!",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988315/The_iPhone_7_Plus_Model_xeto00.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988315/The_iPhone_7_Plus_Model_xeto00.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "Dope Tech: Customs",
+    description: "Dope Tech Episode",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988662/Dope_Tech_2_Customs_yr4rph.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988662/Dope_Tech_2_Customs_yr4rph.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
+    title: "You'll Be In My Heart & Two World",
+    description: "From the Disney Movie Tarzan. Two of my favorite songs.",
+    video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988917/Tarzan_-_You_ll_be_in_My_Heart_Two_World_MV_HD_xowavs.mp4",
+    thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988917/Tarzan_-_You_ll_be_in_My_Heart_Two_World_MV_HD_xowavs.jpg",
+    user_id: users.sample.id,
+    views: rand(1000000)
+  })
+)
+
+videos.push(
+  Video.create!({
     title: "LITTY",
     description: "Sid the Science Kid goes HAM with friends",
     video_url: "https://res.cloudinary.com/danielcloud/video/upload/v1484455768/LITTY_ayskj7.mp4",
@@ -583,7 +803,17 @@ all_comments = [
   "I miss this",
   "First time here, definitely not my last",
   "Made an account just to comment",
-  "This site is awesome!"
+  "This site is awesome!",
+  "So colorful.",
+  "Hakuna Matata",
+  "WOWW",
+  "Jawdropping video",
+  "😍 😍",
+  "Can't wait to show this to my friends",
+  "My friend is going to love this video!",
+  "I need a job",
+  "I need money.",
+  "Send money to @daniel"
 ]
 
 comments = []
