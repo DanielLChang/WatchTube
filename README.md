@@ -32,10 +32,11 @@ A [database schema][schema], [sample state][sample-state], and [api-endpoints][a
 
 ## Technology
 WatchTube is a single-page application built using Ruby on Rails and React/Redux.
-- Hosted on Heroku
-- PostgreSQL database
-- Cloudinary for file storage
-- BCrypt for password encryption
+- [Frontend][frontend]
+[frontend]: ./docs/frontend.md
+- [Backend][backend]
+[backend]: ./docs/backend.md
+
 
 ### Future Implementations
 - [ ] Video persistence
