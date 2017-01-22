@@ -82,7 +82,7 @@ class SearchBar extends React.Component {
     let preVal = "", lastPreVal = "";
     let postVal = "", lastPostVal = "";
     let lastWordVal = "";
-    let val = query;
+    let val = query.toLowerCase();
 
     let suggestionSplit = suggestion.split(" ");
     let values = val.split(" ");
