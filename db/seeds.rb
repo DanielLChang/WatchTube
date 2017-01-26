@@ -682,7 +682,7 @@ videos.push(
 
 videos.push(
   Video.create!({
-    title: "Apple AirPods Review: Fully Wireless!",
+    title: "Apple AirPods Review",
     description: "AirPods: fully wireless earbuds that launched with iPhone 7. The hype is over. Are they any good?",
     video_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988426/Apple_AirPods_Review_Fully_Wireless_fbievh.mp4",
     thumbnail_url: "https://res.cloudinary.com/dxfu1kzhk/video/upload/v1484988426/Apple_AirPods_Review_Fully_Wireless_fbievh.jpg",
