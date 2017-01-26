@@ -27,4 +27,7 @@ module.exports = {
   resolve: {
     extensions: ["", ".js", ".jsx" ]
   },
+  "process.env": {
+     NODE_ENV: JSON.stringify("production")
+   }
 };
