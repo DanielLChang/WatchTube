@@ -7,10 +7,10 @@ class Footer extends React.Component {
     return (
       <footer className="footer-nav">
         <div className="left-footer-nav">
-          <a className="github-logo" href="https://github.com/DanielLChang" >
+          <a className="github-logo" href="https://github.com/DanielLChang/WatchTube" >
             <i className="fa fa-github"></i>
           </a>
-          <a className="linkedin-logo" href="https://www.linkedin.com/in/daniel-chang-6a7707119">
+          <a className="linkedin-logo" href="https://www.linkedin.com/in/daniel-chang">
             <i className="fa fa-linkedin-square"></i>
           </a>
         </div>
