@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 var path = require("path");
 
 module.exports = {
@@ -21,13 +22,18 @@ module.exports = {
         test: /\.png$/,
         loader: "url-loader?mimetype=image/png"
       }
+    ],
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production')
+        }
+      }),
+      new webpack.optimize.UglifyJsPlugin()
     ]
   },
   devtool: 'source-maps',
   resolve: {
     extensions: ["", ".js", ".jsx" ]
   },
-  "process.env": {
-     NODE_ENV: JSON.stringify("production")
-   }
 };
