@@ -14,6 +14,7 @@ class VideoShow extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.props.getOneVideo(this.props.id);
     this.props.getAllVideos();
   }
@@ -21,6 +22,7 @@ class VideoShow extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (this.props.id !== nextProps.id) {
       this.props.getOneVideo(nextProps.id);
+      window.scrollTo(0, 0);
     }
     this.setState({ videos: this.getSidebarVideos(nextProps.videos)} );
   }

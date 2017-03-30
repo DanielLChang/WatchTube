@@ -24,10 +24,6 @@ class SessionForm extends React.Component {
     this.handleImageUpload = this.handleImageUpload.bind(this);
   }
 
-  componentDidUpdate() {
-    debugger;
-  }
-
   onImageDrop(files) {
     $(".dropzone-upload img").hide();
     $(".loading-animation").show();
@@ -52,6 +48,10 @@ class SessionForm extends React.Component {
         });
       }
     });
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   componentDidUpdate() {

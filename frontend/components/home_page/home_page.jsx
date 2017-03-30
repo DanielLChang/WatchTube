@@ -16,6 +16,7 @@ class HomePage extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.props.getAllVideos();
     this.handleResize();
     window.addEventListener('resize', this.handleResize);
