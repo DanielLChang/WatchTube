@@ -33,8 +33,10 @@ A [database schema][schema], [sample state][sample-state], and [api-endpoints][a
 ## Technology
 WatchTube is a single-page application built using Ruby on Rails and React/Redux.
 - [Frontend][frontend]
+
 [frontend]: ./docs/frontend.md
 - [Backend][backend]
+
 [backend]: ./docs/backend.md
 
 
